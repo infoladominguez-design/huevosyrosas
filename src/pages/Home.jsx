@@ -8,8 +8,13 @@ function CourseCard({ course }) {
   const { average, count } = useReviews(course.id)
   return (
     <Link className="course-card" to={`/cursos/${course.id}`}>
-      <div className="course-card__cover" style={{ background: course.accent }}>
-        <span>{course.cover}</span>
+      <div
+        className="course-card__cover"
+        style={{ backgroundImage: `url(${course.image})` }}
+      >
+        <span className="course-card__badge" style={{ background: course.accent }}>
+          {course.cover}
+        </span>
       </div>
       <div className="course-card__body">
         <div className="course-card__tags">
@@ -39,7 +44,9 @@ export default function Home() {
     <>
       <section className="hero" id="top">
         <p className="hero__eyebrow">{hero.eyebrow}</p>
-        <h1 className="hero__title">Aprende lo cotidiano,<br />hazlo extraordinario.</h1>
+        <h1 className="hero__title">
+          Aprende lo cotidiano,<br />hazlo <em>extraordinario</em>.
+        </h1>
         <p className="hero__subtitle">
           Cursos online sobre cocina, flores y los pequeños detalles que hacen
           memorable la vida diaria. Aprende a tu ritmo, en comunidad.

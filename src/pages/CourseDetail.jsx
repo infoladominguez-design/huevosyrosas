@@ -78,8 +78,13 @@ export default function CourseDetail() {
       <Link className="back-link" to="/cursos">← Todos los cursos</Link>
 
       <div className="course-hero">
-        <div className="course-hero__cover" style={{ background: course.accent }}>
-          <span>{course.cover}</span>
+        <div
+          className="course-hero__cover"
+          style={{ backgroundImage: `url(${course.image})` }}
+        >
+          <span className="course-hero__badge" style={{ background: course.accent }}>
+            {course.cover}
+          </span>
         </div>
         <div className="course-hero__body">
           <h1 className="course-hero__title">{course.title}</h1>

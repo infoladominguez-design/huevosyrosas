@@ -9,8 +9,13 @@ function CourseRow({ course }) {
   const total = courseLessonCount(course)
   return (
     <Link className="course-card" to={`/cursos/${course.id}`}>
-      <div className="course-card__cover" style={{ background: course.accent }}>
-        <span>{course.cover}</span>
+      <div
+        className="course-card__cover"
+        style={{ backgroundImage: `url(${course.image})` }}
+      >
+        <span className="course-card__badge" style={{ background: course.accent }}>
+          {course.cover}
+        </span>
       </div>
       <div className="course-card__body">
         <div className="course-card__tags">

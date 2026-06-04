@@ -13,6 +13,8 @@ export const courses = [
     subtitle: 'El ritual de empezar el día con cuidado y belleza.',
     cover: '🍳',
     accent: '#f5b942',
+    image:
+      'https://images.unsplash.com/photo-1525351484163-7529414344d8?w=1000&q=80',
     level: 'Principiante',
     durationHours: 4,
     price: 49,
@@ -100,6 +102,8 @@ export const courses = [
     subtitle: 'Centros y ramos que convierten cualquier comida en un evento.',
     cover: '🌹',
     accent: '#e35d6a',
+    image:
+      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1000&q=80',
     level: 'Intermedio',
     durationHours: 5,
     price: 59,
@@ -158,6 +162,8 @@ export const courses = [
     subtitle: 'Lo básico bien hecho: bizcochos, masas y cremas sin secretos.',
     cover: '🧁',
     accent: '#c84a57',
+    image:
+      'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1000&q=80',
     level: 'Principiante',
     durationHours: 6,
     price: 55,
