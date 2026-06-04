@@ -52,7 +52,7 @@ export default function Home() {
           memorable la vida diaria. Aprende a tu ritmo, en comunidad.
         </p>
         <div className="hero__actions">
-          <Link className="btn btn--primary" to="/cursos">Ver cursos</Link>
+          <Link className="btn btn--primary btn--cta" to="/cursos">Ver cursos</Link>
           <Link className="btn btn--ghost" to="/comunidad">Unirme a la comunidad</Link>
         </div>
       </section>

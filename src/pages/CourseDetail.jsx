@@ -99,7 +99,7 @@ export default function CourseDetail() {
           <div className="course-hero__actions">
             {firstLesson && (
               <Link
-                className="btn btn--primary"
+                className="btn btn--primary btn--cta"
                 to={`/cursos/${course.id}/${course.modules[0].id}/${firstLesson.id}`}
               >
                 {count > 0 ? 'Continuar curso' : `Empezar · ${course.price} €`}

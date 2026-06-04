@@ -1,30 +1,30 @@
 :root {
-  /* Paleta */
-  --bg: #fbf7f1;
-  --bg-2: #f6efe5;
-  --surface: #fffdfa;
-  --ink: #2a2320;
-  --muted: #837567;
-  --rose: #e35d6a;
-  --rose-dark: #c0455a;
-  --rose-soft: #fcecef;
-  --yolk: #f4b740;
-  --yolk-soft: #fdf3dd;
-  --line: #ece2d4;
-  --line-strong: #e0d3c0;
+  /* Paleta — blanco, negro y rosa fucsia */
+  --bg: #ffffff;
+  --bg-soft: #fcdfee;          /* rosa pastel para secciones */
+  --bg-tint: #fbeef6;          /* rosa muy suave */
+  --surface: #ffffff;
+  --dark: #16141a;             /* negro de tarjetas y botones */
+  --ink: #16141a;
+  --muted: #7b7682;
+  --pink: #ec4899;             /* fucsia de acento */
+  --pink-dark: #db2777;
+  --pink-soft: #fbd0e6;
+  --line: #efe9ef;
+  --line-strong: #e4dce6;
 
-  /* Sombras por niveles */
-  --shadow-sm: 0 2px 8px -3px rgba(80, 55, 35, 0.18);
-  --shadow: 0 14px 40px -20px rgba(80, 55, 35, 0.35);
-  --shadow-lg: 0 30px 70px -30px rgba(80, 55, 35, 0.45);
+  /* Sombras suaves */
+  --shadow-sm: 0 2px 10px -4px rgba(20, 15, 25, 0.12);
+  --shadow: 0 18px 45px -22px rgba(20, 15, 25, 0.28);
+  --shadow-lg: 0 30px 70px -30px rgba(20, 15, 25, 0.32);
 
   /* Tipografía */
-  --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --serif: 'Plus Jakarta Sans', system-ui, sans-serif;
 
   --maxw: 1080px;
-  --radius: 20px;
-  --radius-sm: 12px;
+  --radius: 28px;
+  --radius-sm: 18px;
 }
 
 * {
@@ -39,21 +39,17 @@ body {
   margin: 0;
   font-family: var(--sans);
   color: var(--ink);
-  background-color: var(--bg);
-  background-image:
-    radial-gradient(40rem 40rem at 110% -10%, rgba(244, 183, 64, 0.16), transparent 60%),
-    radial-gradient(36rem 36rem at -10% 5%, rgba(227, 93, 106, 0.12), transparent 55%);
-  background-attachment: fixed;
-  line-height: 1.65;
+  background: var(--bg);
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, .section__title, .hero__title {
-  font-family: var(--serif);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
+  font-family: var(--sans);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
 }
 
 a {
@@ -82,16 +78,16 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.9rem clamp(1rem, 5vw, 3rem);
-  background: rgba(251, 247, 241, 0.8);
+  padding: 1rem clamp(1rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(140%) blur(12px);
   border-bottom: 1px solid var(--line);
 }
 
 .nav__brand {
-  font-family: var(--serif);
-  font-weight: 600;
+  font-weight: 800;
   font-size: 1.2rem;
+  letter-spacing: -0.02em;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -105,7 +101,7 @@ img {
   display: flex;
   gap: clamp(0.6rem, 3vw, 1.75rem);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--muted);
   margin-left: auto;
   margin-right: 1rem;
@@ -113,43 +109,28 @@ img {
 
 .nav__links a {
   position: relative;
-  padding: 0.2rem 0;
-  transition: color 0.15s ease;
-}
-
-.nav__links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 0;
-  height: 2px;
-  border-radius: 2px;
-  background: var(--rose);
-  transition: width 0.2s ease;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  transition: color 0.15s ease, background 0.15s ease;
 }
 
 .nav__links a:hover,
 .nav__links a.active {
-  color: var(--rose);
-}
-
-.nav__links a:hover::after,
-.nav__links a.active::after {
-  width: 100%;
+  color: var(--ink);
+  background: var(--bg-tint);
 }
 
 .nav__name {
   border: 1px solid var(--line-strong);
   background: var(--surface);
   border-radius: 999px;
-  padding: 0.45rem 0.95rem;
+  padding: 0.5rem 1rem;
   font: inherit;
+  font-weight: 500;
   font-size: 0.88rem;
   color: var(--ink);
   width: clamp(110px, 18vw, 165px);
-  box-shadow: var(--shadow-sm);
-  transition: border-color 0.15s ease;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .nav__name::placeholder {
@@ -158,7 +139,8 @@ img {
 
 .nav__name:focus {
   outline: none;
-  border-color: var(--rose);
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px var(--pink-soft);
 }
 
 /* ============================================================
@@ -172,7 +154,7 @@ main > section {
 }
 
 .section__title {
-  font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
   margin: 0 0 1.5rem;
 }
 
@@ -194,12 +176,12 @@ main > section {
   color: var(--muted);
   margin-bottom: 1.75rem;
   font-size: 0.92rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.15s ease, gap 0.15s ease;
 }
 
 .back-link:hover {
-  color: var(--rose);
+  color: var(--pink);
   gap: 0.5rem;
 }
 
@@ -209,40 +191,56 @@ main > section {
 .hero {
   text-align: center;
   position: relative;
+  background: var(--bg-soft);
+  border-radius: 36px;
+  margin: clamp(1rem, 4vw, 2rem) auto 0;
+  padding: clamp(3rem, 9vw, 6rem) clamp(1.5rem, 6vw, 4rem) !important;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.25), transparent 70%);
+  top: -120px;
+  right: -80px;
+  border-radius: 50%;
 }
 
 .hero__eyebrow {
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--rose-dark);
-  background: var(--rose-soft);
-  padding: 0.35rem 0.9rem;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--pink-dark);
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.4rem 1rem;
   border-radius: 999px;
   margin: 0 0 1.5rem;
+  position: relative;
 }
 
 .hero__title {
-  font-size: clamp(2.6rem, 8vw, 4.8rem);
-  font-weight: 600;
+  font-size: clamp(2.7rem, 8vw, 5rem);
+  font-weight: 800;
   margin: 0 0 1.25rem;
+  position: relative;
 }
 
 .hero__title em {
-  font-style: italic;
-  background: linear-gradient(115deg, var(--rose-dark), var(--yolk));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-style: normal;
+  color: var(--pink);
 }
 
 .hero__subtitle {
   max-width: 46ch;
   margin: 0 auto 2.25rem;
-  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-  color: var(--muted);
+  font-size: clamp(1.05rem, 2.5vw, 1.2rem);
+  color: #4a4550;
+  position: relative;
 }
 
 .hero__actions {
@@ -250,6 +248,7 @@ main > section {
   gap: 0.85rem;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 /* ============================================================
@@ -259,16 +258,16 @@ main > section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.4rem;
-  padding: 0.8rem 1.7rem;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 999px;
   font-family: var(--sans);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.97rem;
   cursor: pointer;
   border: 1px solid transparent;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease,
-    border-color 0.15s ease;
+    border-color 0.15s ease, color 0.15s ease;
 }
 
 .btn:hover {
@@ -280,13 +279,34 @@ main > section {
 }
 
 .btn--primary {
-  background: linear-gradient(120deg, var(--rose), var(--rose-dark));
+  background: var(--dark);
   color: #fff;
-  box-shadow: 0 12px 28px -12px rgba(192, 69, 90, 0.7);
+  box-shadow: 0 14px 30px -14px rgba(20, 15, 25, 0.7);
 }
 
 .btn--primary:hover {
-  box-shadow: 0 16px 34px -12px rgba(192, 69, 90, 0.85);
+  background: #000;
+  box-shadow: 0 18px 36px -14px rgba(20, 15, 25, 0.85);
+}
+
+/* Flecha rosa en círculo (como la referencia), solo en CTAs principales */
+.btn--cta::after {
+  content: '↗';
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: -0.3rem -0.6rem -0.3rem 0.1rem;
+  border-radius: 50%;
+  background: var(--pink);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: transform 0.15s ease;
+}
+
+.btn--cta:hover::after {
+  transform: rotate(45deg);
 }
 
 .btn--ghost {
@@ -296,8 +316,7 @@ main > section {
 }
 
 .btn--ghost:hover {
-  border-color: var(--rose);
-  color: var(--rose-dark);
+  border-color: var(--ink);
 }
 
 /* ============================================================
@@ -325,12 +344,19 @@ main > section {
 }
 
 .card__icon {
-  font-size: 2.2rem;
+  display: inline-grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  font-size: 1.8rem;
 }
 
 .card__title {
-  margin: 0.75rem 0 0.5rem;
+  margin: 0.85rem 0 0.5rem;
   font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .card__text {
@@ -344,20 +370,20 @@ main > section {
 .tag {
   display: inline-block;
   font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--muted);
-  background: var(--bg-2);
+  background: var(--bg-tint);
   border: 1px solid var(--line);
   border-radius: 999px;
-  padding: 0.2rem 0.65rem;
+  padding: 0.25rem 0.7rem;
 }
 
 .tag--accent {
-  color: var(--rose-dark);
+  color: #fff;
   border-color: transparent;
-  background: var(--rose-soft);
+  background: var(--pink);
 }
 
 /* ============================================================
@@ -377,27 +403,22 @@ main > section {
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .course-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--line-strong);
 }
 
 .course-card__cover {
   position: relative;
-  height: 168px;
+  height: 180px;
+  margin: 0.6rem 0.6rem 0;
+  border-radius: 22px;
   background-size: cover;
   background-position: center;
-}
-
-.course-card__cover::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(42, 35, 32, 0.28));
+  overflow: hidden;
 }
 
 .course-card__badge,
@@ -411,16 +432,17 @@ main > section {
 }
 
 .course-card__badge {
-  bottom: -22px;
-  left: 18px;
-  width: 52px;
-  height: 52px;
-  font-size: 1.6rem;
-  border: 3px solid var(--surface);
+  bottom: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  font-size: 1.4rem;
+  background: #fff !important;
+  border: none;
 }
 
 .course-card__body {
-  padding: 1.5rem 1.35rem 1.35rem;
+  padding: 1.25rem 1.35rem 1.35rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -435,7 +457,8 @@ main > section {
 
 .course-card__title {
   margin: 0.15rem 0 0;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .course-card__subtitle {
@@ -465,15 +488,15 @@ main > section {
 }
 
 .course-card__price {
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: 1.35rem;
-  color: var(--rose-dark);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--ink);
 }
 
 .course-card__level {
   font-size: 0.85rem;
   color: var(--muted);
+  font-weight: 600;
 }
 
 /* ============================================================
@@ -503,15 +526,14 @@ main > section {
 
 .progress__track {
   height: 10px;
-  background: var(--bg-2);
+  background: var(--bg-tint);
   border-radius: 999px;
   overflow: hidden;
-  box-shadow: inset 0 1px 2px rgba(80, 55, 35, 0.12);
 }
 
 .progress__fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--rose), var(--yolk));
+  background: var(--pink);
   border-radius: 999px;
   transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -521,7 +543,7 @@ main > section {
   margin-top: 0.45rem;
   font-size: 0.85rem;
   color: var(--muted);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* ============================================================
@@ -545,24 +567,25 @@ main > section {
 }
 
 .course-hero__badge {
-  bottom: -24px;
-  right: -16px;
-  width: 64px;
-  height: 64px;
-  font-size: 2rem;
-  border: 4px solid var(--bg);
+  bottom: 16px;
+  right: 16px;
+  width: 60px;
+  height: 60px;
+  font-size: 1.8rem;
+  background: #fff !important;
+  border: none;
 }
 
 .course-hero__title {
   font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
   margin: 0 0 0.5rem;
 }
 
 .course-hero__subtitle {
-  font-size: 1.2rem;
-  font-family: var(--serif);
-  font-style: italic;
-  color: var(--rose-dark);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--pink);
   margin: 0 0 1rem;
 }
 
@@ -573,7 +596,7 @@ main > section {
   margin: 1.25rem 0;
   color: var(--muted);
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .course-hero__actions {
@@ -596,6 +619,7 @@ main > section {
   align-items: center;
   gap: 0.7rem;
   font-size: 1.25rem;
+  font-weight: 700;
   margin: 0 0 0.85rem;
 }
 
@@ -605,21 +629,19 @@ main > section {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: linear-gradient(120deg, var(--rose), var(--rose-dark));
+  background: var(--pink);
   color: #fff;
-  font-family: var(--sans);
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 800;
   flex-shrink: 0;
 }
 
 .lesson-list {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0.5rem;
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  overflow: hidden;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
 }
@@ -628,18 +650,13 @@ main > section {
   display: flex;
   align-items: center;
   gap: 0.85rem;
-  padding: 0.95rem 1.25rem;
-  border-bottom: 1px solid var(--line);
-  transition: background 0.15s ease, padding-left 0.15s ease;
-}
-
-.lesson-list li:last-child .lesson-row {
-  border-bottom: none;
+  padding: 0.9rem 1rem;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s ease;
 }
 
 .lesson-row:hover {
-  background: var(--bg);
-  padding-left: 1.5rem;
+  background: var(--bg-tint);
 }
 
 .lesson-row__check {
@@ -648,7 +665,7 @@ main > section {
 
 .lesson-row__title {
   flex: 1;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lesson-row__dur {
@@ -665,15 +682,16 @@ main > section {
 
 .lesson__eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--rose);
+  letter-spacing: 0.1em;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--pink);
   margin: 0 0 0.5rem;
 }
 
 .lesson__title {
   font-size: clamp(1.7rem, 4vw, 2.5rem);
+  font-weight: 800;
   margin: 0 0 1.75rem;
 }
 
@@ -685,7 +703,7 @@ main > section {
 
 .block--text {
   margin: 0;
-  font-size: 1.12rem;
+  font-size: 1.1rem;
   line-height: 1.75;
 }
 
@@ -722,7 +740,6 @@ main > section {
   margin-top: 0.65rem;
   color: var(--muted);
   font-size: 0.9rem;
-  font-style: italic;
   text-align: center;
 }
 
@@ -731,8 +748,8 @@ main > section {
   align-items: center;
   gap: 0.85rem;
   padding: 1.1rem 1.35rem;
-  background: var(--yolk-soft);
-  border: 1px solid #f0e2bf;
+  background: var(--bg-tint);
+  border: 1px solid var(--line);
   border-radius: var(--radius-sm);
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
@@ -754,10 +771,8 @@ main > section {
   justify-content: space-between;
   margin: 2.75rem 0;
   padding: 1.5rem;
-  background: var(--surface);
-  border: 1px solid var(--line);
+  background: var(--bg-tint);
   border-radius: var(--radius);
-  box-shadow: var(--shadow-sm);
 }
 
 .lesson__nav {
@@ -794,7 +809,7 @@ main > section {
 .form__input {
   width: 100%;
   font: inherit;
-  padding: 0.75rem 1rem;
+  padding: 0.8rem 1.1rem;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius-sm);
   background: var(--surface);
@@ -809,8 +824,8 @@ main > section {
 
 .form__input:focus {
   outline: none;
-  border-color: var(--rose);
-  box-shadow: 0 0 0 3px var(--rose-soft);
+  border-color: var(--pink);
+  box-shadow: 0 0 0 3px var(--pink-soft);
 }
 
 .panel {
@@ -846,7 +861,7 @@ main > section {
 
 .reply {
   box-shadow: none;
-  background: var(--bg);
+  background: var(--bg-tint);
 }
 
 .comment__head {
@@ -858,7 +873,7 @@ main > section {
 }
 
 .comment__head strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .comment__date {
@@ -878,11 +893,12 @@ main > section {
   cursor: pointer;
   font: inherit;
   font-size: 0.82rem;
+  font-weight: 600;
   transition: color 0.15s ease;
 }
 
 .link-btn:hover {
-  color: var(--rose);
+  color: var(--pink);
 }
 
 .reviews,
@@ -908,9 +924,9 @@ main > section {
 }
 
 .reviews__summary strong {
-  font-family: var(--serif);
   font-size: 1.8rem;
-  color: var(--rose-dark);
+  font-weight: 800;
+  color: var(--ink);
 }
 
 /* ============================================================
@@ -947,6 +963,7 @@ main > section {
 .thread__title {
   margin: 0;
   font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .thread__meta {
@@ -956,8 +973,14 @@ main > section {
 }
 
 .thread__toggle {
-  font-size: 1.6rem;
-  color: var(--rose);
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  font-size: 1.3rem;
+  color: var(--pink-dark);
   line-height: 1;
   flex-shrink: 0;
 }
@@ -991,12 +1014,14 @@ main > section {
 
 .contact {
   text-align: center;
+  background: var(--bg-soft);
+  border-radius: 36px;
 }
 
 .contact__text {
   max-width: 50ch;
   margin: 0 auto 2rem;
-  color: var(--muted);
+  color: #4a4550;
   font-size: 1.1rem;
 }
 
@@ -1023,11 +1048,6 @@ main > section {
   .course-hero__cover {
     aspect-ratio: 16 / 10;
     max-width: 360px;
-  }
-  .course-hero__badge {
-    right: auto;
-    left: 16px;
-    bottom: -22px;
   }
   .nav {
     flex-wrap: wrap;
