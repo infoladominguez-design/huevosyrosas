@@ -1,4 +1,4 @@
-// Contenido PÚBLICO de las lecciones de vista previa gratuita.
+// Contenido PÚBLICO de las vistas previas gratuitas.
 export const previews = {
   "me-duele-estar-soltera:l0": [
     {
@@ -36,6 +36,124 @@ export const previews = {
     {
       "type": "text",
       "value": "Claudia"
+    }
+  ],
+  "no-estas-loca:l0": [
+    {
+      "type": "text",
+      "value": "Hay algo que nunca te enseñaron"
+    },
+    {
+      "type": "text",
+      "value": "Nadie te explicó que tu sistema nervioso también elige por ti. Y que si ese sistema se moldeó en un entorno donde tus emociones eran demasiado, donde no hubo quién te sostuviera, quién te explicara, quién te calmara, entonces lo más probable es que hoy confundas intensidad con amor, inestabilidad con atracción y abandono con costumbre."
+    },
+    {
+      "type": "text",
+      "value": "No es que estés buscando sufrir. Es que tu cuerpo aprendió a anticipar el dolor para evitar el abandono. Y ese cuerpo, no tu cabeza, no tus intenciones, no tu espiritualidad, es el que responde primero cada vez que abres una app, esperas un mensaje o sientes mariposas por alguien que ni siquiera sabe lo que quiere."
+    },
+    {
+      "type": "text",
+      "value": "Este programa no te va a enseñar a pensar distinto. Te va a enseñar a sentir seguro. Porque no se construyen vínculos sanos si antes no se aprende a estar a salvo en el propio cuerpo."
+    },
+    {
+      "type": "text",
+      "value": "Para quién es este programa"
+    },
+    {
+      "type": "text",
+      "value": "Para ti, si te enganchas con quien no te elige, si te aburre la calma y te atrapa el drama, si das consejos brillantes a tus amigas pero no puedes seguir los propios, si sabes perfecto qué relación quieres pero eliges lo contrario. No estás rota. Estás desregulada. Y eso se puede reconfigurar."
+    },
+    {
+      "type": "text",
+      "value": "Cómo funciona"
+    },
+    {
+      "type": "text",
+      "value": "Son seis módulos, uno por semana. Cada uno tiene una pregunta central, una idea que vas a entender con el cuerpo y no solo con la cabeza, y un worksheet para llenar. El último ejercicio de cada módulo es siempre una carta a tu niña interior: es el hilo que sostiene todo el proceso y no es opcional."
+    },
+    {
+      "type": "text",
+      "value": "No avances de corrido. Cada módulo abre una puerta que solo se puede abrir porque el anterior ya se abrió. Vas a necesitar un cuaderno o este mismo documento donde escribir. Responde con la mano en el pecho, no con la cabeza apurada."
+    },
+    {
+      "type": "text",
+      "value": "LA REGLA QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Entender el patrón con la inteligencia no es lo mismo que dejar de repetirlo. Tu sabiduría está en la cabeza, pero tu programación está en el cuerpo. Por eso este programa trabaja el cuerpo. La sanación no es cambiar tu historia, es cambiar la interpretación que tu cuerpo hace de ella."
+    },
+    {
+      "type": "text",
+      "value": "EL RECORRIDO"
+    },
+    {
+      "type": "text",
+      "value": "El mapa de las 6 semanas"
+    },
+    {
+      "type": "text",
+      "value": "Tu sistema nervioso elige por ti"
+    },
+    {
+      "type": "text",
+      "value": "Por qué la elección amorosa no es libre: es automática. El detective, la familiaridad y por qué tu cuerpo gana."
+    },
+    {
+      "type": "text",
+      "value": "Los tres estados: el mapa de tu cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Acelerador, freno y calma conectada. Aprender a nombrar en qué estado estás en tiempo real."
+    },
+    {
+      "type": "text",
+      "value": "Cómo se configuró tu sistema"
+    },
+    {
+      "type": "text",
+      "value": "El origen de la hipervigilancia. Reconstruir tu propia arquitectura para quitarte la culpa."
+    },
+    {
+      "type": "text",
+      "value": "Aprende a leer tus señales"
+    },
+    {
+      "type": "text",
+      "value": "Diagnóstico somático. Detectar la desregulación en el cuerpo antes de que sea tarde."
+    },
+    {
+      "type": "text",
+      "value": "Microexperiencias de regulación"
+    },
+    {
+      "type": "text",
+      "value": "Neuroplasticidad en acción. Entrenar el acceso a la calma y construir tu ancla interna."
+    },
+    {
+      "type": "text",
+      "value": "Del piloto automático a la elección"
+    },
+    {
+      "type": "text",
+      "value": "Amor auténtico contra repetición traumática. Elegir desde el deseo, no desde la herida."
+    },
+    {
+      "type": "text",
+      "value": "Tu sistema nervioso"
+    },
+    {
+      "type": "text",
+      "value": "elige por ti"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Por qué me engancho con quien no me elige, aunque sepa que no me hace bien?"
     }
   ]
 }

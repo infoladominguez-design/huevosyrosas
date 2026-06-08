@@ -1,4 +1,4 @@
-// SOLO SERVIDOR. Cuerpo de las lecciones. No se importa nunca desde el navegador.
+// SOLO SERVIDOR. Cuerpo de las lecciones.
 export const content = {
   "me-duele-estar-soltera:l0": [
     {
@@ -1918,6 +1918,1912 @@ export const content = {
     {
       "type": "text",
       "value": "Claudia"
+    }
+  ],
+  "no-estas-loca:l0": [
+    {
+      "type": "text",
+      "value": "Hay algo que nunca te enseñaron"
+    },
+    {
+      "type": "text",
+      "value": "Nadie te explicó que tu sistema nervioso también elige por ti. Y que si ese sistema se moldeó en un entorno donde tus emociones eran demasiado, donde no hubo quién te sostuviera, quién te explicara, quién te calmara, entonces lo más probable es que hoy confundas intensidad con amor, inestabilidad con atracción y abandono con costumbre."
+    },
+    {
+      "type": "text",
+      "value": "No es que estés buscando sufrir. Es que tu cuerpo aprendió a anticipar el dolor para evitar el abandono. Y ese cuerpo, no tu cabeza, no tus intenciones, no tu espiritualidad, es el que responde primero cada vez que abres una app, esperas un mensaje o sientes mariposas por alguien que ni siquiera sabe lo que quiere."
+    },
+    {
+      "type": "text",
+      "value": "Este programa no te va a enseñar a pensar distinto. Te va a enseñar a sentir seguro. Porque no se construyen vínculos sanos si antes no se aprende a estar a salvo en el propio cuerpo."
+    },
+    {
+      "type": "text",
+      "value": "Para quién es este programa"
+    },
+    {
+      "type": "text",
+      "value": "Para ti, si te enganchas con quien no te elige, si te aburre la calma y te atrapa el drama, si das consejos brillantes a tus amigas pero no puedes seguir los propios, si sabes perfecto qué relación quieres pero eliges lo contrario. No estás rota. Estás desregulada. Y eso se puede reconfigurar."
+    },
+    {
+      "type": "text",
+      "value": "Cómo funciona"
+    },
+    {
+      "type": "text",
+      "value": "Son seis módulos, uno por semana. Cada uno tiene una pregunta central, una idea que vas a entender con el cuerpo y no solo con la cabeza, y un worksheet para llenar. El último ejercicio de cada módulo es siempre una carta a tu niña interior: es el hilo que sostiene todo el proceso y no es opcional."
+    },
+    {
+      "type": "text",
+      "value": "No avances de corrido. Cada módulo abre una puerta que solo se puede abrir porque el anterior ya se abrió. Vas a necesitar un cuaderno o este mismo documento donde escribir. Responde con la mano en el pecho, no con la cabeza apurada."
+    },
+    {
+      "type": "text",
+      "value": "LA REGLA QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Entender el patrón con la inteligencia no es lo mismo que dejar de repetirlo. Tu sabiduría está en la cabeza, pero tu programación está en el cuerpo. Por eso este programa trabaja el cuerpo. La sanación no es cambiar tu historia, es cambiar la interpretación que tu cuerpo hace de ella."
+    },
+    {
+      "type": "text",
+      "value": "EL RECORRIDO"
+    },
+    {
+      "type": "text",
+      "value": "El mapa de las 6 semanas"
+    },
+    {
+      "type": "text",
+      "value": "Tu sistema nervioso elige por ti"
+    },
+    {
+      "type": "text",
+      "value": "Por qué la elección amorosa no es libre: es automática. El detective, la familiaridad y por qué tu cuerpo gana."
+    },
+    {
+      "type": "text",
+      "value": "Los tres estados: el mapa de tu cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Acelerador, freno y calma conectada. Aprender a nombrar en qué estado estás en tiempo real."
+    },
+    {
+      "type": "text",
+      "value": "Cómo se configuró tu sistema"
+    },
+    {
+      "type": "text",
+      "value": "El origen de la hipervigilancia. Reconstruir tu propia arquitectura para quitarte la culpa."
+    },
+    {
+      "type": "text",
+      "value": "Aprende a leer tus señales"
+    },
+    {
+      "type": "text",
+      "value": "Diagnóstico somático. Detectar la desregulación en el cuerpo antes de que sea tarde."
+    },
+    {
+      "type": "text",
+      "value": "Microexperiencias de regulación"
+    },
+    {
+      "type": "text",
+      "value": "Neuroplasticidad en acción. Entrenar el acceso a la calma y construir tu ancla interna."
+    },
+    {
+      "type": "text",
+      "value": "Del piloto automático a la elección"
+    },
+    {
+      "type": "text",
+      "value": "Amor auténtico contra repetición traumática. Elegir desde el deseo, no desde la herida."
+    },
+    {
+      "type": "text",
+      "value": "Tu sistema nervioso"
+    },
+    {
+      "type": "text",
+      "value": "elige por ti"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Por qué me engancho con quien no me elige, aunque sepa que no me hace bien?"
+    }
+  ],
+  "no-estas-loca:m1l1": [
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Hay algo que nunca te enseñaron"
+    },
+    {
+      "type": "text",
+      "value": "Toda la vida te dijeron que el amor es cosa del corazón y de la cabeza. Que si eliges mal es porque no te quieres lo suficiente, o porque todavía no aprendiste la lección. Y entonces lees, haces terapia, repites afirmaciones... y vuelves a caer con el mismo tipo de persona. No es que no hayas entendido. Es que nadie te explicó la pieza más importante: tu cuerpo también elige. Y elige más rápido que tú."
+    },
+    {
+      "type": "text",
+      "value": "Dentro de ti hay un sistema que lleva años decidiendo a quién perseguir, de quién huir y a quién confundir con amor. Trabaja en silencio, sin pedirte permiso, y casi siempre gana. Ese sistema se llama tu sistema nervioso, y este programa entero existe para que aprendas a conocerlo."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Tú no eliges en el amor solo con la cabeza. Tu cuerpo elige primero, y lo hace según lo que aprendió hace mucho tiempo. No estás loca: estás respondiendo con un sistema que se configuró sin que te dieras cuenta."
+    },
+    {
+      "type": "text",
+      "value": "Durante las próximas seis semanas no vas a aprender a pensar distinto. Vas a aprender a sentir seguro. Y eso lo cambia todo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué es el sistema nervioso? (en fácil) Olvídate del dibujo del colegio con los nervios y la médula. Para lo que nos importa aquí, piénsalo así de simple: tu sistema nervioso es el sistema de alarma de tu casa."
+    },
+    {
+      "type": "text",
+      "value": "Una alarma tiene un solo trabajo: detectar peligro y reaccionar antes de que pienses. No se sienta a analizar si conviene o no sonar. Detecta y actúa. Tu sistema nervioso hace exactamente eso, todo el día, con una sola pregunta de fondo: ¿estoy a salvo o estoy en peligro?"
+    },
+    {
+      "type": "text",
+      "value": "El problema es que esta alarma no distingue entre un peligro real y uno emocional. Para ella, un mensaje que dice \"tenemos que hablar\" puede sonar igual de fuerte que un ladrón en la puerta. No exagera por molestarte: reacciona con la información que tiene grabada."
+    },
+    {
+      "type": "text",
+      "value": "LO IMPORTANTE DE ESTA IDEA"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo no reacciona a lo que está pasando de verdad. Reacciona a lo que cree que está pasando, según lo que aprendió antes. Por eso un silencio de tres horas puede activarte como si fuera una emergencia."
+    },
+    {
+      "type": "text",
+      "value": "Y aquí viene lo bonito: una alarma se puede reprogramar. Si entiendes cómo funciona la tuya, puedes enseñarle, poco a poco, a no sonar cada vez que el amor se parece a tu pasado."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Tu detective privado"
+    },
+    {
+      "type": "text",
+      "value": "Vamos a ponerle cara a esa alarma. Imagina que cuando tenías más o menos 6 años contrataste a un detective privado. Le diste una sola orden, clarísima: \"asegúrate de que nunca me vuelvan a abandonar\"."
+    },
+    {
+      "type": "text",
+      "value": "Ese detective se tomó el trabajo muy en serio. Lleva años estudiando cada gesto, cada tono de voz, cada silencio. Tiene un archivo enorme: todas las veces que pediste cariño y llegó el silencio, todas las veces que te sentiste sola, todas las veces que algo dolió. Nunca lo despediste. Sigue trabajando hoy, las 24 horas."
+    },
+    {
+      "type": "text",
+      "value": "Por eso pasa esto: tú estás convencida de que este hombre es distinto, pero tu detective ve que tardó tres horas en responder y enciende la alarma. Para él no es un mensaje tardío: es la misma escena de cuando eras niña y nadie venía."
+    },
+    {
+      "type": "text",
+      "value": "“Tu cabeza dice: voy a tomármelo con calma. Tu detective dice: cuidado, esto ya lo vivimos, y dolió.” El detective no es tu enemigo. Te ha protegido toda la vida. Pero está usando un manual viejo, escrito por una niña asustada, para una vida que ya no es esa. Tu trabajo no es despedirlo. Es darle un manual nuevo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo busca lo conocido, no lo bueno"
+    },
+    {
+      "type": "text",
+      "value": "Esta es, quizá, la idea que más te va a sacudir. Tu sistema nervioso no busca lo que te hace feliz. Busca lo que le resulta familiar. Y lo familiar, para él, se siente como hogar... aunque ese hogar te haya hecho daño."
+    },
+    {
+      "type": "text",
+      "value": "Por eso pasa algo que seguro reconoces: El hombre que te trata bien, que responde, que es estable... te parece aburrido."
+    },
+    {
+      "type": "text",
+      "value": "El que te deja en visto, el inseguro, el que sopla y sopla, te parece emocionante. Confundes la ansiedad en el estómago con mariposas, y la calma con falta de chispa. No es que tengas mal gusto. Es que tu cuerpo aprendió que el amor venía con incertidumbre, con esfuerzo, con tener que ganárselo. Entonces, cuando aparece alguien que te quiere sin que tengas que perseguirlo, tu sistema no lo reconoce como amor. Le falta la dosis de angustia que para ti era \"normal\"."
+    },
+    {
+      "type": "text",
+      "value": "LO IMPORTANTE DE ESTA IDEA"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo distingue cincuenta formas distintas de abandono, pero todavía no reconoce bien el sabor del amor tranquilo y constante. Ese sabor se aprende. Y aprenderlo es justo lo que vamos a hacer."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Por qué tu cuerpo siempre gana"
+    },
+    {
+      "type": "text",
+      "value": "Quizá te preguntas: si yo entiendo todo esto, ¿por qué lo sigo haciendo? La respuesta es de pura velocidad."
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo reacciona en 0,2 segundos. Tu parte racional, la que razona y pone límites, tarda unos 2 segundos. Diez veces más lento. Es una carrera perdida antes de empezar."
+    },
+    {
+      "type": "text",
+      "value": "Vamos a verlo con un ejemplo. Es viernes. Te escribió a las 3 de la tarde, todo bien. Son las 8 de la noche y no ha vuelto a aparecer. Antes de que tú decidas nada, tu cuerpo ya hizo todo esto: se te apretó el pecho, agarraste el teléfono, lo revisaste tres veces, tu cabeza ya armó la película de que se cansó de ti. Para cuando tu parte sensata dice \"tranquila, no pasa nada\", tu cuerpo ya soltó la cascada de química que te dejó enganchada y ansiosa."
+    },
+    {
+      "type": "text",
+      "value": "No es falta de voluntad. No es falta de inteligencia. Es que tu sabiduría vive en la cabeza, pero tu programación vive en el cuerpo. Y el cuerpo va primero."
+    },
+    {
+      "type": "text",
+      "value": "Por eso de nada sirve solo \"decidir\" amar distinto. Hay que ir a la velocidad del cuerpo, y eso se entrena con práctica, no con fuerza de voluntad."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Lo que ninguna app puede darte"
+    },
+    {
+      "type": "text",
+      "value": "Cada vez que abres una app de citas, tu cuerpo no ve una app. Ve una nueva oportunidad de reparar lo que dolió hace años. Una vocecita dice: \"esta vez voy a encontrar a alguien que me elija, esta vez voy a demostrar que sí valgo\"."
+    },
+    {
+      "type": "text",
+      "value": "Pero una app no puede curar lo que se rompió cuando eras niña. Y mientras la uses para tapar ese hueco, vas a seguir atrayendo personas que repiten tu herida, porque tu sistema las reconoce como \"conocidas\". No eres un imán de gente que no te conviene. Es tu alarma confundiendo lo familiar con lo seguro."
+    },
+    {
+      "type": "text",
+      "value": "LA VERDAD, EN DOS FRASES"
+    },
+    {
+      "type": "text",
+      "value": "La buena noticia: tu sistema nervioso se puede reprogramar."
+    },
+    {
+      "type": "text",
+      "value": "La mala noticia: no va a pasar deslizando perfiles. Va a pasar aquí, contigo, con tu cuerpo. “No estás loca por engancharte con quien no te elige. No eres demasiado por necesitar respuestas. Tu cuerpo solo está haciendo lo que aprendió para mantenerte a salvo.” Esa frase no es para que te quedes tranquila sin hacer nada. Es para que dejes de pelearte contigo y empieces a trabajar con tu cuerpo en lugar de contra él. Eso empieza ahora, en el worksheet."
+    }
+  ],
+  "no-estas-loca:m1l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 1"
+    },
+    {
+      "type": "text",
+      "value": "Cómo está configurado tu sistema nervioso"
+    },
+    {
+      "type": "text",
+      "value": "Responde con la mano en el pecho, no con la cabeza apurada. Aquí no hay respuestas correctas ni incorrectas: hay un cuerpo que aprendió a sobrevivir y que por fin va a ser escuchado."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. Tu punto de partida"
+    },
+    {
+      "type": "text",
+      "value": "1. Cuando alguien que te gusta tarda en responderte, ¿qué pasa en tu cuerpo? Describe la sensación física (pecho, estómago, manos, respiración)."
+    },
+    {
+      "type": "text",
+      "value": "2. ¿Con qué tipo de persona te enganchas más fácil: con quien te da paz o con quien te deja en vilo? Sé honesta."
+    },
+    {
+      "type": "text",
+      "value": "3. ¿Cuál es el tipo de relación que dices que quieres?"
+    },
+    {
+      "type": "text",
+      "value": "4. ¿Y cuál es el tipo de persona que terminas eligiendo en la práctica? Mira tu historia, no tus intenciones."
+    },
+    {
+      "type": "text",
+      "value": "5. Completa la frase: cuando estoy tranquila en una relación, mi cuerpo siente que..."
+    },
+    {
+      "type": "text",
+      "value": "Parte B. El expediente del detective"
+    },
+    {
+      "type": "text",
+      "value": "Cada vez que sientas una activación amorosa (ansiedad por un mensaje, urgencia, ganas de revisar el teléfono) llena una fila. No lo analices todavía. Solo registra."
+    },
+    {
+      "type": "text",
+      "value": "Día"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué pasó?"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué pasó justo antes?"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué sintió mi cuerpo?"
+    },
+    {
+      "type": "text",
+      "value": "Parte C. Cabeza contra cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "A la izquierda, lo que tu cabeza sabe y quiere. A la derecha, lo que tu cuerpo elige en la práctica. No te juzgues por la brecha: ese hueco es el mapa exacto de lo que vamos a reprogramar."
+    },
+    {
+      "type": "text",
+      "value": "Lo que mi CABEZA quiere"
+    },
+    {
+      "type": "text",
+      "value": "Lo que mi CUERPO elige"
+    }
+  ],
+  "no-estas-loca:m1l3": [
+    {
+      "type": "text",
+      "value": "EL EJERCICIO MÁS IMPORTANTE DE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Vas a escribirle a la niña de 6 años que contrató al detective. Cuéntale que entendiste por qué lo hizo, que no estaba loca, que hizo lo que pudo para sobrevivir. Esta carta es el hilo que va a sostener todo tu proceso: la vas a retomar cada semana. No es opcional."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña: Para cerrar el Módulo 1 Esta semana no tienes que cambiar nada todavía. Tu único trabajo fue empezar a ver: ver al detective, ver la brecha entre tu cabeza y tu cuerpo, ver a la niña que sigue esperando. Ver es el primer acto de poder: no puedes reprogramar un sistema que no sabes que está corriendo. Y ahora ya lo sabes. La próxima vez que te preguntes por qué te enganchas con quien te ignora, recuerda lo que aprendiste hoy: no estás loca. Estás desregulada. Y la desregulación, a diferencia de la locura, se puede entrenar."
+    },
+    {
+      "type": "text",
+      "value": "Los tres estados:"
+    },
+    {
+      "type": "text",
+      "value": "el mapa de tu cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Por qué a veces me acelero hasta no poder dormir y otras me apago y nada me importa?"
+    }
+  ],
+  "no-estas-loca:m2l1": [
+    {
+      "type": "text",
+      "value": "Veníamos de aquí: tu sistema nervioso elige por ti, busca lo familiar y no lo que te conviene, y gana porque va más rápido que tu mente. Ahora vas a aprender a leer ese cuerpo. Vas a tener un mapa."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo tiene tres velocidades"
+    },
+    {
+      "type": "text",
+      "value": "Hay días en que te aceleras tanto que no puedes dormir, revisas el teléfono cada cinco minutos y tu cabeza no para. Y hay otros en que te apagas, te da igual todo, no te quieres levantar. Y piensas: \"estoy loca, ayer era demasiado intensa y hoy soy un témpano\"."
+    },
+    {
+      "type": "text",
+      "value": "No estás loca. Tu cuerpo no es caótico. Funciona como un carro con tres velocidades: un acelerador, un freno y un punto donde simplemente avanza tranquilo."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo tiene tres estados: acelerado (ansiedad), frenado (apagón) y en calma. No son fallas: son velocidades. El problema no es tenerlas, es vivir saltando entre el acelerador y el freno sin pasar nunca por la calma."
+    },
+    {
+      "type": "text",
+      "value": "Cuando aprendas a reconocer en cuál de las tres estás, vas a dejar de sentirte secuestrada por tus reacciones. Y reconocer es el primer paso para poder elegir."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Tu centro de operaciones"
+    },
+    {
+      "type": "text",
+      "value": "Volvamos a la alarma del Módulo 1. Esa alarma tiene un centro de mando que está encendido todo el día, evaluando cada situación con una sola pregunta: ¿estoy a salvo o en peligro?"
+    },
+    {
+      "type": "text",
+      "value": "Lo hace sin que te enteres. No te pregunta. Decide y te pone en una de las tres velocidades según lo que detecta. Y como ya viste, no distingue entre un peligro real y uno emocional: un \"tenemos que hablar\" puede ponerlo en alerta máxima."
+    },
+    {
+      "type": "text",
+      "value": "Esto explica algo que te ha desconcertado mil veces: por qué no puedes \"decidir\" estar tranquila. Si tu centro de mando leyó peligro, tu cuerpo ya cambió de velocidad, y ninguna frase bonita lo va a apagar de golpe."
+    },
+    {
+      "type": "text",
+      "value": "“Tú no eliges en qué estado estás. Lo elige él por ti. Tu trabajo no es controlarlo a la fuerza, es aprender a escucharlo y, con el tiempo, a guiarlo.” Por eso este módulo es tan importante: es el manual de instrucciones de tu propio cuerpo. Vamos con las tres velocidades, una por una."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "El acelerador"
+    },
+    {
+      "type": "text",
+      "value": "El acelerador"
+    },
+    {
+      "type": "text",
+      "value": "Corazón a mil, pecho apretado, urgencia por resolver \"ya\", insomnio dándole vueltas a todo, necesidad de revisar el teléfono una y otra vez. Mandas mensajes de más, persigues, controlas. Todo se siente demasiado."
+    },
+    {
+      "type": "text",
+      "value": "Esta es la velocidad de la ansiedad. Tu cuerpo se enciende para \"hacer algo\" y recuperar el control: escribir, preguntar, exigir una respuesta. Cree que si actúa rápido, evita el abandono. Aquí está la trampa más grande del amor: ese cosquilleo intenso que tú llamas \"estar enamorada\" muchas veces no es deseo. Es tu cuerpo desesperado por calmarse a través del otro. Necesitas que él responda para poder respirar. Eso no es amor tranquilo: es una alarma sonando."
+    },
+    {
+      "type": "text",
+      "value": "PARA RECONOCERLO"
+    },
+    {
+      "type": "text",
+      "value": "Si cuando alguien te gusta sientes más angustia que paz, más urgencia que disfrute, probablemente no estás enamorada. Estás activada. Y notarlo es el principio de poder calmarte. CUANDO TU CUERPO SE ENCIENDE\fNo Estás Loca, Estás Desregulada"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "El freno de emergencia"
+    },
+    {
+      "type": "text",
+      "value": "El freno de emergencia"
+    },
+    {
+      "type": "text",
+      "value": "Cuando ya no puedes más: \"me da igual\", te aíslas, te apagas. Agotamiento profundo, vacío en el pecho, no querer levantarte, comer de más o nada, sentirte anestesiada. Por fuera pareces tranquila o resignada. Por dentro te estás rompiendo."
+    },
+    {
+      "type": "text",
+      "value": "Mucha gente confunde este estado con paz, pero no lo es. Es desconexión. Tu cuerpo, después de tanto acelerar sin resultado, tira del freno de emergencia y te apaga para que dejes de sufrir tan fuerte. Es el estado de la niña que se cansó de esperar. Que pidió muchas veces y no vino nadie, y entonces aprendió que apagarse dolía menos que seguir con la esperanza encendida. Por eso a veces, de un día para otro, pasas de perseguir con desesperación a bloquear y \"ya no sentir nada\"."
+    },
+    {
+      "type": "text",
+      "value": "PARA RECONOCERLO"
+    },
+    {
+      "type": "text",
+      "value": "Si después de un golpe amoroso sientes que se te apagó la energía, que nada importa y que mejor \"ni intentarlo\", no es que seas fría ni madura. Tu cuerpo se está protegiendo apagándose. CUANDO TU CUERPO SE APAGA\fNo Estás Loca, Estás Desregulada"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "La calma conectada"
+    },
+    {
+      "type": "text",
+      "value": "La calma conectada"
+    },
+    {
+      "type": "text",
+      "value": "Respiración lenta y profunda, músculos sueltos, energía estable. Puedes estar presente sin distraerte, pedir sin miedo, quedarte en silencio sin sentir urgencia. La calma es de verdad, no forzada."
+    },
+    {
+      "type": "text",
+      "value": "Esta es la única velocidad donde tu cuerpo no se está defendiendo de nada. Y es, también, el único lugar desde donde se construye el amor sano: el que no te obliga a perseguir ni a desaparecer. Aquí viene lo que casi nadie te dice: a esta calma no se llega solo con desearla, ni repitiéndote \"estoy bien, estoy bien\". Se llega entrenándola, igual que un músculo. Si tu cuerpo casi nunca la visitó de niña, hoy le cuesta encontrar el camino. Pero el camino existe, y lo vamos a recorrer juntas en los próximos módulos."
+    },
+    {
+      "type": "text",
+      "value": "“La calma no es lo aburrido. Es el hogar donde, por fin, te puedes quedar sin tener que ganártelo.” CUANDO TU CUERPO SE SIENTE A SALVO\fNo Estás Loca, Estás Desregulada"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "No se trata de en cuál estás"
+    },
+    {
+      "type": "text",
+      "value": "Quizá ahora quieras \"vivir en calma todo el tiempo\". Tranquila: eso no existe, y perseguirlo solo te haría sentir más rota. Las tres velocidades son sanas y necesarias. El acelerador te mueve, el freno te protege, la calma te conecta."
+    },
+    {
+      "type": "text",
+      "value": "Lo que de verdad importa no es en qué estado estás, sino si puedes moverte entre ellos con fluidez y volver a la calma. Un cuerpo regulado sube y baja según lo que pasa, pero siempre encuentra el camino de regreso. Un cuerpo desregulado se queda haciendo ping-pong entre el acelerador y el freno, sin pasar casi nunca por la calma."
+    },
+    {
+      "type": "text",
+      "value": "LA IDEA CLAVE DE ESTE MÓDULO"
+    },
+    {
+      "type": "text",
+      "value": "No eres dos personas contradictorias (la intensa y la fría). Eres un solo cuerpo rebotando entre dos extremos porque nadie le enseñó el punto medio. Ese punto medio se aprende."
+    },
+    {
+      "type": "text",
+      "value": "RECUERDA ESTO"
+    },
+    {
+      "type": "text",
+      "value": "La seguridad no es algo que se piensa, es algo que se siente. Si tu cuerpo no la siente, no te la crees, por más que te la repitan. Por eso entrenamos el cuerpo, no solo las ideas. No tienes que vivir en calma para estar sana. Tienes que aprender el camino de regreso a ella. Y ese camino lo vamos a entrenar paso a paso."
+    }
+  ],
+  "no-estas-loca:m2l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 2"
+    },
+    {
+      "type": "text",
+      "value": "El mapa de tus estados"
+    },
+    {
+      "type": "text",
+      "value": "No se trata de juzgar tus estados, sino de empezar a reconocerlos. Cuanto antes notes en cuál estás, antes vas a poder elegir qué hacer."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. ¿Dónde vives tú?"
+    },
+    {
+      "type": "text",
+      "value": "1. ¿Cuál de los tres estados sientes que es tu casa, ese al que vuelves casi sin darte cuenta? 2. En tu última relación o enganche, ¿cómo se movía tu cuerpo? Describe el recorrido (por ejemplo: empezaba en el acelerador y terminaba en el freno)."
+    },
+    {
+      "type": "text",
+      "value": "3. ¿Qué situaciones te disparan al acelerador?"
+    },
+    {
+      "type": "text",
+      "value": "4. ¿Qué situaciones te mandan al freno?"
+    },
+    {
+      "type": "text",
+      "value": "Parte B. El semáforo del día"
+    },
+    {
+      "type": "text",
+      "value": "Durante siete días, tres veces al día (mañana, tarde y noche) anota en qué estado estás: A de acelerador, F de freno, C de calma. Vas a tener el mapa de tus estados y de tus disparadores."
+    },
+    {
+      "type": "text",
+      "value": "Mañana"
+    },
+    {
+      "type": "text",
+      "value": "Tarde"
+    },
+    {
+      "type": "text",
+      "value": "Noche"
+    },
+    {
+      "type": "text",
+      "value": "Día"
+    },
+    {
+      "type": "text",
+      "value": "Lunes"
+    },
+    {
+      "type": "text",
+      "value": "Martes"
+    },
+    {
+      "type": "text",
+      "value": "Miércoles"
+    },
+    {
+      "type": "text",
+      "value": "Jueves"
+    },
+    {
+      "type": "text",
+      "value": "Viernes"
+    },
+    {
+      "type": "text",
+      "value": "Sábado"
+    },
+    {
+      "type": "text",
+      "value": "Domingo"
+    },
+    {
+      "type": "text",
+      "value": ". Al terminar la semana: ¿qué patrón ves? ¿A qué hora del día te activas o te apagas más?"
+    },
+    {
+      "type": "text",
+      "value": "Parte C. Tu zona de aterrizaje"
+    },
+    {
+      "type": "text",
+      "value": "TU ANCLA PARA TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Vas a identificar un momento, lugar o actividad reciente donde sentiste calma genuina, no forzada. Ese es tu estado de calma, tu zona de aterrizaje. La vamos a usar en los próximos módulos como punto de regreso."
+    },
+    {
+      "type": "text",
+      "value": "1. Describe ese momento de calma con todo el detalle que puedas: ¿dónde estabas? ¿qué hacías? ¿con quién?"
+    },
+    {
+      "type": "text",
+      "value": "2. ¿Cómo se sentía tu cuerpo? (respiración, hombros, mandíbula, estómago) 3. Si tuvieras que recrear una pizca de esa calma hoy, ¿qué sería lo más pequeño que podrías hacer?"
+    }
+  ],
+  "no-estas-loca:m2l3": [
+    {
+      "type": "text",
+      "value": "EL EJERCICIO QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Vuelve a tu niña, la misma del Módulo 1. Dile que cuando se aceleraba o se apagaba no era porque algo estuviera mal con ella, sino porque su cuerpo la protegía con lo único que sabía hacer. Cuéntale en qué estado la encuentras más seguido y prométele que van a aprender, juntas, el camino de regreso a la calma."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña: Para cerrar el Módulo 2 Ahora tienes un mapa. Ya no estás perdida dentro de tus reacciones: tienes tres nombres para lo que antes era puro caos. Y entendiste que no eres contradictoria, sino un cuerpo buscando un punto de equilibrio que nunca le enseñaron."
+    },
+    {
+      "type": "text",
+      "value": "No tienes que vivir en calma para estar sana. Tienes que aprender el camino de regreso a ella. Y ese camino, a partir de ahora, lo vamos a entrenar paso a paso."
+    },
+    {
+      "type": "text",
+      "value": "Cómo se configuró"
+    },
+    {
+      "type": "text",
+      "value": "tu sistema"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Por qué mi cuerpo aprendió a vivir en alerta si yo solo quería que me quisieran?"
+    }
+  ],
+  "no-estas-loca:m3l1": [
+    {
+      "type": "text",
+      "value": "Veníamos de aquí: ya sabes que tu cuerpo elige por ti y ya tienes el mapa de tus tres velocidades. Ahora vamos al origen: por qué tu cuerpo quedó configurado así. Entender de dónde viene te quita la culpa."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Aprendiste a amar como te amaron"
+    },
+    {
+      "type": "text",
+      "value": "Nadie nace sabiendo amar. Se aprende, igual que se aprende a hablar: copiando lo que vivimos de pequeños. Tu cuerpo aprendió qué es el amor mirando cómo te amaron a ti. Y aquí está el punto: si ese amor fue tranquilo y constante, tu cuerpo aprendió que amar es estar en paz. Pero si fue inestable, ausente o condicionado (a veces sí, a veces no, solo si te portabas bien), entonces no aprendiste a amar. Aprendiste a anticipar."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo no aprendió a amar: aprendió a sobrevivir al amor. Si de niña el cariño era impredecible, hoy tu sistema sigue tratando el amor como algo que hay que vigilar y ganarse, no como un lugar seguro donde descansar."
+    },
+    {
+      "type": "text",
+      "value": "No es tu culpa, y tampoco es necesariamente culpa de nadie. Mucha gente que nos amó hizo lo que pudo con lo que tenía. Pero el resultado quedó grabado en tu cuerpo, y hoy podemos entenderlo para empezar a cambiarlo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Cómo se graba un sistema nervioso"
+    },
+    {
+      "type": "text",
+      "value": "De niña no tenías palabras para lo que sentías, pero tu cuerpo iba sacando conclusiones de todo lo que pasaba. Esas conclusiones quedaron grabadas como reglas, sin que nadie las dijera en voz alta. Mira si reconoces alguna: Si cuando llorabas te decían \"no es para tanto\" o \"no llores\", tu cuerpo aprendió: mis emociones molestan, mejor las escondo."
+    },
+    {
+      "type": "text",
+      "value": "Si te abrazaban solo cuando sacabas buenas notas o te portabas bien, aprendió: el amor se gana, no se regala."
+    },
+    {
+      "type": "text",
+      "value": "Si tuviste que cuidar a un adulto (consolar a mamá, no dar problemas), aprendió: yo me hago cargo, no pido nada."
+    },
+    {
+      "type": "text",
+      "value": "Si a veces te cuidaban y a veces te ignoraban sin saber por qué, aprendió: tengo que estar atenta todo el tiempo para no ser abandonada."
+    },
+    {
+      "type": "text",
+      "value": "Ninguna niña decide esto. Su cuerpo lo deduce solo, buscando la forma de seguir siendo querida. Y esas reglas, que de niña te ayudaron a sobrevivir, hoy siguen encendidas aunque ya no las necesites."
+    },
+    {
+      "type": "text",
+      "value": "LO IMPORTANTE DE ESTA IDEA"
+    },
+    {
+      "type": "text",
+      "value": "Lo que hoy llamas \"mi forma de ser en el amor\" no es tu personalidad. Son las reglas de supervivencia que tu cuerpo escribió de niña. Y lo que se escribió, se puede reescribir."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Por qué hoy confundes intensidad con amor"
+    },
+    {
+      "type": "text",
+      "value": "Si el amor que conociste venía con incertidumbre (no saber si te iban a querer hoy, tener que ganártelo, estar pendiente del humor del otro), tu cuerpo grabó que el amor \"de verdad\" se siente así: con un poquito de angustia de fondo."
+    },
+    {
+      "type": "text",
+      "value": "Por eso de adulta: Te sientes más viva con quien te mantiene en la duda que con quien te da certeza."
+    },
+    {
+      "type": "text",
+      "value": "La tranquilidad te aburre, porque tu cuerpo no la asocia con amor sino con \"aquí no está pasando nada\"."
+    },
+    {
+      "type": "text",
+      "value": "Confundes la intensidad (el drama, la montaña rusa) con la intimidad (la cercanía real y calmada). Sientes que tienes que esforzarte para merecer cariño, porque así fue como lo conseguiste de niña."
+    },
+    {
+      "type": "text",
+      "value": "No eliges el drama porque te guste sufrir. Lo eliges porque tu cuerpo lo reconoce. Es lo único que aprendió a llamar amor."
+    },
+    {
+      "type": "text",
+      "value": "“Tu pequeño cuerpo se volvió un radar, siempre escaneando por si venía el próximo rechazo. Hoy ese radar sigue encendido, aunque el peligro ya pasó.”"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Una historia para entenderlo: Sofía (parte 1) Para que veas cómo se arma todo esto, te presento a Sofía, 29 años. Su cuerpo no se \"rompió\" de golpe: se fue configurando despacio, año tras año. Léelo como un espejo para mirar tu propia historia."
+    },
+    {
+      "type": "text",
+      "value": "0a3años"
+    },
+    {
+      "type": "text",
+      "value": "El cariño dependía del humor de su mamá: a veces estaba, a veces no. Sofía aprendió muy temprano: \"no es seguro necesitar, mejor me adapto a no molestar\"."
+    },
+    {
+      "type": "text",
+      "value": "4a7años"
+    },
+    {
+      "type": "text",
+      "value": "Su papá solo era cariñoso cuando ella brillaba. A los 5 se enfermó y su mamá, en crisis, no pudo cuidarla: \"cuando más necesito, más sola estoy\". A los 7 ganó un concurso y por fin la abrazaron los dos juntos: \"solo me quieren si soy excepcional\"."
+    },
+    {
+      "type": "text",
+      "value": "FÍJATE EN ESTO"
+    },
+    {
+      "type": "text",
+      "value": "A los 7 años, Sofía ya tenía dos reglas grabadas en el cuerpo: necesitar es peligroso, y el amor se gana siendo perfecta. Nadie se las enseñó con palabras. Su cuerpo las dedujo de lo que vivió."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "La historia de Sofía (parte 2)"
+    },
+    {
+      "type": "text",
+      "value": "8 a 12 años"
+    },
+    {
+      "type": "text",
+      "value": "Se volvió \"la fuerte\". Empezó a cuidar emocionalmente a sus papás, atenta al más mínimo cambio de humor. A los 10 se separaron y le dijeron: \"ahora eres la mujer de la casa, cuida a tu mamá\"."
+    },
+    {
+      "type": "text",
+      "value": "13 a 18 años"
+    },
+    {
+      "type": "text",
+      "value": "La hija perfecta. Se enamoraba de chicos fríos y distantes. Si la trataban bien, se aburría. Si no había drama, no sentía nada. Su cuerpo concluyó: \"si es tranquilo es falso, si es intenso es real\"."
+    },
+    {
+      "type": "text",
+      "value": "29 años"
+    },
+    {
+      "type": "text",
+      "value": "Llega a terapia tras su tercera ruptura, escuchando siempre lo mismo: \"eres muy intensa, me cansas\". Y un día logra ponerlo en palabras: \"mi cuerpo no sabe estar tranquilo. Para mí, la paz es peligrosa\". La historia de Sofía no es rara. Es la historia de muchísimas mujeres brillantes, capaces y queridas por todos, que por dentro viven con el radar encendido y no saben por qué el amor tranquilo les resulta imposible."
+    },
+    {
+      "type": "text",
+      "value": "Sofía no estaba loca ni era demasiado. Su cuerpo solo estaba siendo fiel a lo que aprendió. El tuyo también."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Por qué repites (y cómo se sale) Ahora puedes responder la pregunta de este módulo: repites los mismos vínculos porque tu cuerpo busca lo que le resulta familiar, no lo que le hace bien. Fuiste entrenada para sobrevivir, no para disfrutar. Y tu sistema sigue funcionando en \"modo peligro\", aunque el peligro ya no exista. Pero aquí está la salida, y es importante que la entiendas bien: no necesitas cambiar tu historia para sanar. Nadie puede cambiar lo que pasó. Lo que sí puedes cambiar es la interpretación que tu cuerpo hace de esa historia hoy."
+    },
+    {
+      "type": "text",
+      "value": "LA IDEA CLAVE DE ESTE MÓDULO"
+    },
+    {
+      "type": "text",
+      "value": "No tienes que perdonar a nadie, ni revivir cada herida, ni encontrar culpables. Solo necesitas que tu cuerpo aprenda, con experiencias nuevas, que hoy ya está a salvo. Eso es lo que vamos a empezar a entrenar."
+    },
+    {
+      "type": "text",
+      "value": "La sanación no es cambiar tu historia. Es cambiar lo que tu cuerpo cree, hoy, sobre lo que esa historia significa."
+    }
+  ],
+  "no-estas-loca:m3l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 3"
+    },
+    {
+      "type": "text",
+      "value": "Tu propia arquitectura"
+    },
+    {
+      "type": "text",
+      "value": "No busques culpables. Busca la lógica de tu cuerpo. Cada cosa que aprendió tuvo, en su momento, un sentido de supervivencia."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. Tu línea de tiempo"
+    },
+    {
+      "type": "text",
+      "value": "Igual que Sofía, reconstruye tus etapas. En cada una anota qué aprendiste sobre el amor y de qué tuviste que cuidarte."
+    },
+    {
+      "type": "text",
+      "value": "1. De 0 a 7 años: ¿qué aprendiste sobre pedir, necesitar y ser cuidada?"
+    },
+    {
+      "type": "text",
+      "value": "2. De 8 a 12 años: ¿qué papel tuviste que ocupar en tu casa? ¿De qué te volviste responsable? 3. De 13 a 18 años: ¿de qué tipo de personas te enamorabas? ¿Qué te aburría?"
+    },
+    {
+      "type": "text",
+      "value": "Parte B. Las frases que grabaste"
+    },
+    {
+      "type": "text",
+      "value": "Escribe las tres creencias que tu cuerpo grabó de niña sobre el amor (del estilo \"solo valgo si cuido a los demás\" o \"necesitar es peligroso\"). Junto a cada una, cómo se manifiesta hoy en tu vida amorosa."
+    },
+    {
+      "type": "text",
+      "value": "Lo que grabé de niña"
+    },
+    {
+      "type": "text",
+      "value": "Cómo se manifiesta hoy"
+    },
+    {
+      "type": "text",
+      "value": ". Mirando la tabla: ¿qué frase pesa más en tus relaciones de hoy?"
+    }
+  ],
+  "no-estas-loca:m3l3": [
+    {
+      "type": "text",
+      "value": "EL EJERCICIO QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Esta semana la carta es la más importante. Escríbele a esa niña que tuvo que volverse radar, que aprendió a anticipar el rechazo. Dile lo que nadie le dijo entonces: que sus necesidades no eran demasiado, que no tenía que ganarse el amor, que ya no está sola."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña: Para cerrar el Módulo 3 Hoy no reescribiste tu historia: nadie puede. Lo que hiciste fue entender su lógica. Y entender por qué tu cuerpo aprendió lo que aprendió es lo que empieza a soltar la culpa que cargabas por reaccionar como reaccionas."
+    },
+    {
+      "type": "text",
+      "value": "No estás repitiendo porque algo esté mal contigo. Estás repitiendo lo único que tu cuerpo conoce como hogar. Y lo que se aprende, también se puede volver a aprender."
+    },
+    {
+      "type": "text",
+      "value": "Aprende a leer"
+    },
+    {
+      "type": "text",
+      "value": "tus señales"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Cómo sé si estoy desregulada antes de que ya sea tarde?"
+    }
+  ],
+  "no-estas-loca:m4l1": [
+    {
+      "type": "text",
+      "value": "Veníamos de aquí: ya conoces tus tres velocidades y entiendes de dónde vienen. Ahora vas a aprender a detectarlas en el momento, en el cuerpo, antes de que la reacción te arrastre."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo avisa antes que tu cabeza"
+    },
+    {
+      "type": "text",
+      "value": "Cuando te desregulas, tu cabeza es la última en enterarse. Tu cuerpo ya venía avisando hace rato: con una tensión en el pecho, un nudo en el estómago, una respiración corta. Pero como nadie te enseñó a leer esas señales, las ignoras hasta que ya es tarde y estás metida en la ansiedad o el apagón."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Tu cuerpo te avisa cuando se está desregulando, pero en un idioma que no aprendiste a leer: sensaciones físicas. Este módulo te enseña ese idioma, para que notes la señal temprano y tengas tiempo de elegir qué hacer."
+    },
+    {
+      "type": "text",
+      "value": "Este módulo no va de analizar tus relaciones. Va de aprender a sentir tu cuerpo. Piénsalo como aprender a leer un termómetro: no es para asustarte, es para que sepas a tiempo cuándo tienes fiebre."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Señales del acelerador"
+    },
+    {
+      "type": "text",
+      "value": "Cuando tu cuerpo se enciende (la velocidad de la ansiedad), manda señales bastante claras. Aprende a reconocerlas."
+    },
+    {
+      "type": "text",
+      "value": "Cuando estás en el acelerador"
+    },
+    {
+      "type": "text",
+      "value": "En el cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Corazón acelerado cuando no responde. Pecho apretado al leer sus mensajes. Urgencia física por resolver. Insomnio dándole vueltas. Necesidad de revisar el teléfono todo el tiempo."
+    },
+    {
+      "type": "text",
+      "value": "En la mente"
+    },
+    {
+      "type": "text",
+      "value": "Sientes que necesitas una respuesta \"ya\" o todo se derrumba. Tu cabeza arma películas negativas si no hay contacto. No puedes parar de pensar en él."
+    },
+    {
+      "type": "text",
+      "value": "Cuando notes dos o tres de estas señales a la vez, no te preguntes \"¿qué hizo él?\". Date cuenta primero de lo más importante: mi cuerpo está en el acelerador. Eso ya te da una ventaja enorme, porque puedes nombrarlo antes de reaccionar."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Señales del freno y de la calma"
+    },
+    {
+      "type": "text",
+      "value": "Cuando estás en el freno"
+    },
+    {
+      "type": "text",
+      "value": "En el cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Agotamiento profundo después del rechazo. Vacío en el pecho. Te cuesta levantarte. Comes de más o nada. Te sientes anestesiada."
+    },
+    {
+      "type": "text",
+      "value": "En la mente"
+    },
+    {
+      "type": "text",
+      "value": "\"Da igual\" aunque por dentro te rompas. Aparece el \"nadie me va a querer así\". Te resignas a vínculos que no te eligen del todo."
+    },
+    {
+      "type": "text",
+      "value": "Cuando estás en calma"
+    },
+    {
+      "type": "text",
+      "value": "En el cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Respiración profunda y natural. Músculos sueltos. Energía estable. Puedes estar presente sin distraerte."
+    },
+    {
+      "type": "text",
+      "value": "En la mente"
+    },
+    {
+      "type": "text",
+      "value": "Puedes esperar sin urgencia. Te sientes merecedora aunque no estés demostrando nada. Puedes elegir lo estable sin aburrirte."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Por qué entenderlo no basta"
+    },
+    {
+      "type": "text",
+      "value": "Quizá a estas alturas ya entiendes tu patrón de memoria. Y aun así lo sigues repitiendo. Esto te hace sentir peor: \"si ya lo entiendo, ¿por qué sigo cayendo?\". Déjame quitarte ese peso: no es un fracaso tuyo. Es cómo funciona el problema."
+    },
+    {
+      "type": "text",
+      "value": "LA IDEA CLAVE DE ESTE MÓDULO"
+    },
+    {
+      "type": "text",
+      "value": "Entender algo con la cabeza y sentirlo en el cuerpo son dos cosas distintas, y viven en zonas distintas del cerebro. Por eso puedes saberte toda la teoría y seguir reaccionando igual. El cambio no llega pensando más: llega entrenando el cuerpo."
+    },
+    {
+      "type": "text",
+      "value": "Esto explica algo muy frustrante: por qué no te calma que alguien te diga \"tranquila, todo está bien\". Tu cabeza lo escucha, pero tu cuerpo, que no lo siente, no se lo cree. La calma de verdad no se razona. Se entrena, leyendo el cuerpo una señal a la vez."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "La pausa que lo cambia todo"
+    },
+    {
+      "type": "text",
+      "value": "Aquí tienes la herramienta más simple y más poderosa de este módulo. Se llama la pausa, y cabe en tres pasos."
+    },
+    {
+      "type": "text",
+      "value": "Nota. En el momento en que sientas una señal del acelerador (la mano que quiere escribir, el pecho apretado), date cuenta. Solo nota."
+    },
+    {
+      "type": "text",
+      "value": "Respira. Pon una mano en el pecho y suelta una exhalación larga, más larga que la inhalación. Eso le manda a tu cuerpo la señal de que no hay un león, que puede bajar un poco."
+    },
+    {
+      "type": "text",
+      "value": "Nombra. Dite en voz baja: \"estoy desregulada, no estoy en peligro\". No tienes que hacer nada más. No tienes que resolver nada todavía."
+    },
+    {
+      "type": "text",
+      "value": "Parece poquito, pero es enorme. En esos pocos segundos le das a tu parte racional el tiempo que necesita para alcanzar al cuerpo. Le abres una rendija de elección donde antes solo había reacción automática."
+    },
+    {
+      "type": "text",
+      "value": "“No puedes evitar que tu cuerpo se active. Pero sí puedes aprender a notarlo a tiempo. Y notarlo a tiempo lo cambia todo.”"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Cambia la pregunta"
+    },
+    {
+      "type": "text",
+      "value": "Toda tu vida te hiciste la misma pregunta: \"¿por qué me engancho con quien me ignora?\". Es una buena pregunta, pero te deja girando en la culpa, buscando qué tienes de malo."
+    },
+    {
+      "type": "text",
+      "value": "Este módulo te propone cambiarla por otra, mucho más amable y mucho más útil: En lugar de \"¿por qué me engancho con quien me ignora?\", pregúntate: \"¿qué parte de mí sigue esperando una respuesta que nunca llegó?\"."
+    },
+    {
+      "type": "text",
+      "value": "¿Ves la diferencia? La primera pregunta busca un defecto. La segunda busca una herida. Y a las heridas no se les regaña: se las cuida. Cuando notes que te estás enganchando, en lugar de pelearte contigo, pregúntate qué necesita esa parte tuya que quedó esperando. Casi siempre, lo que necesita no te lo puede dar él. Te lo tienes que empezar a dar tú."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Deja de preguntarte qué tienes de malo. Empieza a preguntarte qué parte de ti está pidiendo cuidado. Una herida no se corrige, se atiende. Y la que mejor puede atenderla, hoy, eres tú."
+    }
+  ],
+  "no-estas-loca:m4l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 4"
+    },
+    {
+      "type": "text",
+      "value": "Tu termómetro corporal"
+    },
+    {
+      "type": "text",
+      "value": "Usa las tres listas como tu checklist personal. El objetivo no es estar en calma todo el tiempo, es darte cuenta de en qué estado estás antes de reaccionar."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. ¿Qué reconoces en tu cuerpo?"
+    },
+    {
+      "type": "text",
+      "value": "Marca las señales que reconoces como tuyas."
+    },
+    {
+      "type": "text",
+      "value": "Cuando estoy en el acelerador, en mí aparece:"
+    },
+    {
+      "type": "text",
+      "value": "El corazón se me acelera cuando no responde"
+    },
+    {
+      "type": "text",
+      "value": "Necesito revisar el teléfono todo el tiempo"
+    },
+    {
+      "type": "text",
+      "value": "No puedo dormir pensando en qué pasó"
+    },
+    {
+      "type": "text",
+      "value": "Mando mensajes de más o quiero \"arreglarlo ya\""
+    },
+    {
+      "type": "text",
+      "value": "Cuando estoy en el freno, en mí aparece:"
+    },
+    {
+      "type": "text",
+      "value": "Me agoto y me cuesta hasta levantarme"
+    },
+    {
+      "type": "text",
+      "value": "Siento un vacío en el pecho"
+    },
+    {
+      "type": "text",
+      "value": "Me digo \"da igual\" aunque por dentro me rompa"
+    },
+    {
+      "type": "text",
+      "value": "Me aíslo y me resigno"
+    },
+    {
+      "type": "text",
+      "value": "Cuando estoy en calma, en mí aparece:"
+    },
+    {
+      "type": "text",
+      "value": "Respiro profundo y suelto los hombros"
+    },
+    {
+      "type": "text",
+      "value": "Puedo esperar sin sentir urgencia"
+    },
+    {
+      "type": "text",
+      "value": "Me siento merecedora sin tener que demostrar nada"
+    },
+    {
+      "type": "text",
+      "value": "Parte B. La pausa de 0,2 segundos"
+    },
+    {
+      "type": "text",
+      "value": "LA PRÁCTICA DE LA SEMANA"
+    },
+    {
+      "type": "text",
+      "value": "Cuando detectes una señal de hiperactivación, para. Pon una mano en el pecho, exhala largo y nómbralo en voz baja: \"estoy desregulada, no en peligro\". No tienes que hacer nada más todavía. Solo nombrar."
+    },
+    {
+      "type": "text",
+      "value": "Cada vez que practiques la pausa, registra qué pasó."
+    },
+    {
+      "type": "text",
+      "value": "Día"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué señal detecté?"
+    },
+    {
+      "type": "text",
+      "value": "¿Qué pasó al nombrarla?"
+    },
+    {
+      "type": "text",
+      "value": ". Tu pregunta nueva: ¿qué parte de ti sigue esperando una respuesta que nunca llegó?"
+    }
+  ],
+  "no-estas-loca:m4l3": [
+    {
+      "type": "text",
+      "value": "EL EJERCICIO QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Escríbele desde el cuerpo. Cuéntale a tu niña qué señales aprendiste a reconocer esta semana y dile que ahora tú eres quien va a leer su cuerpo y cuidarla, que ya no tiene que vivir en alerta para estar a salvo."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña: Para cerrar el Módulo 4 Ya no necesitas esperar a estar en crisis para darte cuenta de lo que te pasa. Tienes un termómetro y empezaste a usarlo. Cada vez que nombras un estado en lugar de quedar atrapada en él, le abres a tu cuerpo una rendija de elección que antes no existía."
+    },
+    {
+      "type": "text",
+      "value": "No puedes evitar que tu cuerpo se active. Pero sí puedes aprender a notarlo a tiempo. Y notarlo a tiempo lo cambia todo."
+    },
+    {
+      "type": "text",
+      "value": "Microexperiencias"
+    },
+    {
+      "type": "text",
+      "value": "de regulación"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "Si mi sistema nervioso se configuró así, ¿de verdad se puede cambiar?"
+    }
+  ],
+  "no-estas-loca:m5l1": [
+    {
+      "type": "text",
+      "value": "Veníamos de aquí: ya sabes leer las señales de tu cuerpo. Llegó la pregunta que de verdad importa: si mi sistema se configuró así, ¿de verdad se puede cambiar? La respuesta es sí, y aquí está el cómo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Sí se puede cambiar"
+    },
+    {
+      "type": "text",
+      "value": "Quizá llegaste a creer que así eres y ya, que naciste intensa o ansiosa y que no hay nada que hacer. No es verdad. Tu cerebro cambia toda la vida, con cada experiencia que repites. Eso tiene un nombre bonito: neuroplasticidad."
+    },
+    {
+      "type": "text",
+      "value": "Piénsalo como un sendero en el monte. Tu patrón de siempre (acelerarte, perseguir, apagarte) es el camino más marcado, el que tu cuerpo recorre sin pensar porque lo ha pisado mil veces. La calma, en cambio, es un camino con maleza, casi sin huella."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Tu cerebro se reconfigura con la repetición, como un sendero se marca de tanto pisarlo. No vas a borrar el camino viejo de golpe, pero cada vez que practicas la calma abres un poquito el camino nuevo. Con repetición, ese se vuelve el fácil."
+    },
+    {
+      "type": "text",
+      "value": "No vas a borrar el sendero viejo a la fuerza. Vas a abrir uno nuevo, paso a paso, hasta que tu cuerpo empiece a tomarlo solo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "No es cuestión de voluntad"
+    },
+    {
+      "type": "text",
+      "value": "Aquí hay que ser muy honestas, porque este punto te ha hecho sufrir mucho. Cambiar tu sistema nervioso no es cuestión de fuerza de voluntad. No es que no le hayas echado ganas. Le has echado muchísimas."
+    },
+    {
+      "type": "text",
+      "value": "La voluntad vive en tu parte racional, esa que ya viste que llega tarde, dos segundos después que el cuerpo. Por eso prometerte \"esta vez no voy a perseguir\" casi nunca funciona: en el momento caliente, el cuerpo ya arrancó."
+    },
+    {
+      "type": "text",
+      "value": "Lo que sí funciona es darle a tu cuerpo, una y otra vez, la experiencia de que está a salvo. No el discurso de que está a salvo: la experiencia. Igual que no aprendes a nadar leyendo sobre natación, sino metiéndote al agua de a poquito."
+    },
+    {
+      "type": "text",
+      "value": "LO IMPORTANTE DE ESTA IDEA"
+    },
+    {
+      "type": "text",
+      "value": "Deja de exigirte que cambies \"decidiéndolo\". Empieza a darte experiencias pequeñas y repetidas de calma. El cambio no se ordena: se entrena. Y entrenar es mucho más amable que obligarse."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Qué es una microexperiencia"
+    },
+    {
+      "type": "text",
+      "value": "Una microexperiencia es un momento muy breve, de unos 60 segundos, en el que tu cuerpo siente, aunque sea un poquito, que está a salvo y tranquilo. Pequeño y repetido. Eso es todo. No necesitas una hora de meditación ni un retiro espiritual. Necesitas momentitos como estos, varias veces al día: Una exhalación larga y lenta, soltando los hombros."
+    },
+    {
+      "type": "text",
+      "value": "Sentir el sol o el aire en la cara durante un minuto."
+    },
+    {
+      "type": "text",
+      "value": "Poner los dos pies bien apoyados en el piso y notar que te sostiene."
+    },
+    {
+      "type": "text",
+      "value": "Una mano en el pecho, sintiendo tu propia respiración."
+    },
+    {
+      "type": "text",
+      "value": "Un sorbo de algo caliente, prestando atención de verdad."
+    },
+    {
+      "type": "text",
+      "value": "Cada vez que haces una de estas y tu cuerpo registra \"ah, esto es calma\", abres un poquito el sendero nuevo. Lo importante no es que sea grande. Es que sea repetido."
+    },
+    {
+      "type": "text",
+      "value": "“Pequeño y repetido le gana a grande y esporádico. Así se construye una ruta nueva en el cuerpo.”"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "De depender de él a sostenerte tú"
+    },
+    {
+      "type": "text",
+      "value": "Hasta ahora, tu calma venía de afuera. Estabas bien cuando él respondía, cuando llegaba el \"buenos días\", cuando te confirmaba que seguía ahí. Eso se llama tener un ancla por fuera: tu paz quedaba en manos de otra persona."
+    },
+    {
+      "type": "text",
+      "value": "El problema es obvio: si tu tranquilidad depende de que te escriban, vives a merced del teléfono de alguien más. Cualquier silencio te hunde."
+    },
+    {
+      "type": "text",
+      "value": "LA IDEA CLAVE DE ESTE MÓDULO"
+    },
+    {
+      "type": "text",
+      "value": "Cada microexperiencia de calma que te das a ti misma construye un ancla por dentro: la capacidad de calmarte sin depender de la respuesta del otro. No se trata de no necesitar a nadie. Se trata de que tu paz deje de ser rehén de si te escriben o no."
+    },
+    {
+      "type": "text",
+      "value": "Cuando tienes ancla propia, sigues queriendo y deseando a la otra persona, pero ya no la necesitas para respirar. Y desde ahí, por fin, puedes amar sin desesperarte."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Los límites también regulan"
+    },
+    {
+      "type": "text",
+      "value": "Hay otra cosa que reconfigura tu cuerpo, y no es respirar: son los límites. Cada vez que pones un límite pequeño, le enseñas a tu cuerpo algo nuevo: \"puedo elegir, no tengo que aguantar para que me quieran\"."
+    },
+    {
+      "type": "text",
+      "value": "Un límite no es un portazo ni una pelea. Puede ser muy pequeño: no responder al instante, decir \"hoy no puedo\", no salir corriendo a arreglar algo que no te toca arreglar."
+    },
+    {
+      "type": "text",
+      "value": "Y aquí va lo más importante, porque si no lo sabes te vas a asustar: cuando pongas un límite, lo más probable es que tu cuerpo se incomode. Que sientas culpa, ansiedad, ganas de echarte para atrás. Eso no significa que lo estés haciendo mal."
+    },
+    {
+      "type": "text",
+      "value": "La incomodidad después de poner un límite no es una alarma de que te equivocaste. Es la señal de que tu cuerpo está aprendiendo un camino nuevo."
+    },
+    {
+      "type": "text",
+      "value": "Es el sendero abriéndose."
+    },
+    {
+      "type": "text",
+      "value": "Quédate con esa incomodidad sin salir corriendo a deshacer el límite. Cada vez que la sostienes, le demuestras a tu cuerpo que puede elegir sin que el mundo se acabe."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Reparar viviendo, no pensando"
+    },
+    {
+      "type": "text",
+      "value": "Junta todo lo de este módulo y queda una sola frase: tu sistema nervioso se repara viviendo experiencias nuevas de seguridad, no pensando en ellas. La teoría te dio el mapa. Ahora toca caminar."
+    },
+    {
+      "type": "text",
+      "value": "Y caminar, aquí, significa cosas muy concretas y muy pequeñas: tres respiraciones largas al día, un límite chiquito a la semana, un silencio que no castigas, un momento de sol en la cara. Nada heroico. Solo constante."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "No vas a encontrar el amor que necesitas hasta que repares el sistema que elige por ti. Y ese sistema no se repara pensando, se repara viviendo, de a poquitos, la experiencia de estar a salvo. Pequeño, repetido, todos los días."
+    },
+    {
+      "type": "text",
+      "value": "En el worksheet vas a diseñar tu propio plan de microexperiencias y tu primer límite de la semana. Empieza pequeño. Lo pequeño, repetido, es lo que de verdad cambia un cuerpo."
+    }
+  ],
+  "no-estas-loca:m5l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 5"
+    },
+    {
+      "type": "text",
+      "value": "Entrenar la calma"
+    },
+    {
+      "type": "text",
+      "value": "Pequeño y repetido le gana a grande y esporádico. Así se construye una ruta nueva en el cuerpo."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. Tus tres microexperiencias diarias"
+    },
+    {
+      "type": "text",
+      "value": "Define tres momentos de 60 segundos de calma para cada día. Elígelos fáciles, de los que sí vas a poder cumplir."
+    },
+    {
+      "type": "text",
+      "value": "1. Mi microexperiencia de la mañana será: 2. Mi microexperiencia de la tarde será: 3. Mi microexperiencia de la noche será:"
+    },
+    {
+      "type": "text",
+      "value": "Parte B. Un límite que te devuelva el cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "EL EJERCICIO DE LA SEMANA"
+    },
+    {
+      "type": "text",
+      "value": "Identifica un lugar donde sueles borrarte para sostener un vínculo (responder al instante, decir que sí cuando es no, perseguir). Pon un límite pequeño y concreto esta semana, y observa qué pasa en tu cuerpo."
+    },
+    {
+      "type": "text",
+      "value": ". Mi límite de esta semana será:"
+    },
+    {
+      "type": "text",
+      "value": "Parte C. Registro de microexperiencias"
+    },
+    {
+      "type": "text",
+      "value": "Marca cada día las microexperiencias que lograste y anota cómo respondió tu cuerpo. No busques perfección: busca repetición."
+    },
+    {
+      "type": "text",
+      "value": "Mañana"
+    },
+    {
+      "type": "text",
+      "value": "Tarde"
+    },
+    {
+      "type": "text",
+      "value": "Noche"
+    },
+    {
+      "type": "text",
+      "value": "¿Cómo respondió mi cuerpo?"
+    },
+    {
+      "type": "text",
+      "value": "Día"
+    },
+    {
+      "type": "text",
+      "value": "Lunes"
+    },
+    {
+      "type": "text",
+      "value": "Martes"
+    },
+    {
+      "type": "text",
+      "value": "Miércoles"
+    },
+    {
+      "type": "text",
+      "value": "Jueves"
+    },
+    {
+      "type": "text",
+      "value": "Viernes"
+    },
+    {
+      "type": "text",
+      "value": "Sábado"
+    },
+    {
+      "type": "text",
+      "value": "Domingo"
+    }
+  ],
+  "no-estas-loca:m5l3": [
+    {
+      "type": "text",
+      "value": "EL EJERCICIO QUE SOSTIENE TODO EL PROGRAMA"
+    },
+    {
+      "type": "text",
+      "value": "Escríbele a tu niña contándole las microexperiencias de calma que le estás dando. Dile que cada respiración, cada límite, cada silencio sin castigo es una promesa que esta vez sí vas a cumplir. Que ya no la vas a dejar esperando."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña: Para cerrar el Módulo 5 Esta semana dejaste de solo entender y empezaste a entrenar. Cada microexperiencia, por pequeña que parezca, le está diciendo a tu cuerpo algo que nunca creyó: que puede estar tranquilo y seguir a salvo. Así, de a poquitos, se reconfigura un sistema nervioso."
+    },
+    {
+      "type": "text",
+      "value": "No tienes que sentirte segura para empezar a actuar segura. Es al revés: actúas la seguridad en gestos pequeños, y tu cuerpo, con la repetición, termina por creerla."
+    },
+    {
+      "type": "text",
+      "value": "Del piloto automático"
+    },
+    {
+      "type": "text",
+      "value": "a la elección"
+    },
+    {
+      "type": "text",
+      "value": "Pregunta central"
+    },
+    {
+      "type": "text",
+      "value": "¿Estoy eligiendo desde mi deseo o desde mi sistema nervioso desregulado?"
+    }
+  ],
+  "no-estas-loca:m6l1": [
+    {
+      "type": "text",
+      "value": "Veníamos de aquí: ya entiendes, ya lees tu cuerpo y ya empezaste a entrenar la calma. Llegó lo más importante de todo el programa: aprender a elegir desde un cuerpo tranquilo y no desde la herida."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 1 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Ahora viene lo importante: elegir"
+    },
+    {
+      "type": "text",
+      "value": "Llegaste hasta aquí. Tu cuerpo ya tiene un mapa, sabe leer sus señales y empezó a entrenar la calma. Pero todo eso sirve para una sola cosa, la más importante de todas: que aprendas a elegir distinto."
+    },
+    {
+      "type": "text",
+      "value": "Porque puedes entender todo, regularte mejor, respirar bien... y aun así volver a elegir a la misma persona que te hace daño, si no aprendes a reconocer la diferencia entre lo que te atrae y lo que te conviene."
+    },
+    {
+      "type": "text",
+      "value": "EN PALABRAS SIMPLES"
+    },
+    {
+      "type": "text",
+      "value": "Todo el programa apunta a este momento: que cuando alguien te atraiga, puedas distinguir si te atrae porque te hace bien o porque se parece a tu herida. Esa diferencia la siente tu cuerpo antes que tu cabeza. Solo hay que aprender a escucharlo."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 2 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "No eliges a quien te atrae"
+    },
+    {
+      "type": "text",
+      "value": "Suena fuerte, pero es así: muchas veces no estás eligiendo a la persona que te gusta desde un lugar sano. Estás eligiendo a quien activa tu herida, a quien reproduce la sensación conocida que tu cuerpo confunde con amor porque es lo que vivió de niña."
+    },
+    {
+      "type": "text",
+      "value": "Por eso el \"click\", esa atracción inmediata e intensa con alguien, no siempre es una buena señal. A veces es justo lo contrario: tu cuerpo reconoció un patrón viejo y se emocionó porque por fin tiene la oportunidad de \"ganar\" la batalla que perdió de niña, de lograr que esta vez sí la quieran. Eso no es amor. Es repetición. Tu sistema te lleva, una y otra vez, hacia personas que te ofrecen la misma película, con la esperanza de cambiarle el final. Pero el final no cambia eligiendo el mismo tipo de persona. Cambia cuando cambias quién elige."
+    },
+    {
+      "type": "text",
+      "value": "“La química instantánea muchas veces no es destino. Es tu herida reconociendo a alguien que se le parece.”"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 3 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Expansión o contracción"
+    },
+    {
+      "type": "text",
+      "value": "¿Cómo saber, entonces, si lo que sientes es amor sano o repetición? Tu cabeza se confunde, pero tu cuerpo no. Te da dos respuestas muy distintas, y solo tienes que aprender a leerlas. Una se llama expansión, la otra contracción."
+    },
+    {
+      "type": "text",
+      "value": "El amor sano: expansión"
+    },
+    {
+      "type": "text",
+      "value": "Te sientes más tranquila, más tú, con más aire. Puedes ser quien eres sin disfraces. Respiras hondo, descansas en la relación, no tienes que estar adivinando ni demostrando. El cuerpo se relaja."
+    },
+    {
+      "type": "text",
+      "value": "La repetición: contracción"
+    },
+    {
+      "type": "text",
+      "value": "Te sientes en alerta, caminando sobre cáscaras de huevo. Tienes que medir lo que dices, mostrar tu mejor versión, no pedir demasiado. Hay emoción, sí, pero también un nudo. El cuerpo se tensa y se vigila."
+    },
+    {
+      "type": "text",
+      "value": "TU CUERPO SE ABRETU CUERPO SE CIERRA\fNo Estás Loca, Estás Desregulada"
+    },
+    {
+      "type": "text",
+      "value": "IDEA 4 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "La prueba del cuerpo"
+    },
+    {
+      "type": "text",
+      "value": "Llevemos eso a algo que puedas usar mañana mismo. Cuando estés con alguien que te interesa, o pensando en esa persona, hazle caso a tu cuerpo más que a tu cabeza. Pregúntate: ¿Respiro tranquila o se me aprieta el pecho?"
+    },
+    {
+      "type": "text",
+      "value": "¿Puedo ser yo misma o estoy actuando una versión \"mejorada\"?"
+    },
+    {
+      "type": "text",
+      "value": "¿Me siento más en paz después de verlo, o más ansiosa?"
+    },
+    {
+      "type": "text",
+      "value": "¿Espero sin angustia, o vivo pendiente de su próximo mensaje?"
+    },
+    {
+      "type": "text",
+      "value": "Si las respuestas apuntan a tensión, vigilancia y ansiedad, tu cuerpo te está avisando: esto se parece a la herida, no al amor. No tienes que salir corriendo, pero sí mirarlo con los ojos abiertos en lugar de dejarte arrastrar por el \"click\"."
+    },
+    {
+      "type": "text",
+      "value": "LA IDEA CLAVE DE ESTE MÓDULO"
+    },
+    {
+      "type": "text",
+      "value": "El amor sano se siente como descanso, no como examen. Si para sostener un vínculo tienes que dejar de ser tú, ese vínculo te está pidiendo lo mismo que te pidieron de niña. Y mereces algo distinto."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 5 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "La pregunta que te llevas"
+    },
+    {
+      "type": "text",
+      "value": "Si te quedas con una sola cosa de todo el programa, que sea esta pregunta. Tenla a mano para cada vez que sientas esa atracción intensa, ese impulso de perseguir, esa urgencia: Antes de actuar, pregúntate: ¿estoy eligiendo desde mi deseo o desde mi sistema nervioso desregulado?"
+    },
+    {
+      "type": "text",
+      "value": "Si la respuesta es \"desde el deseo\", desde un cuerpo tranquilo que se abre, adelante. Si la respuesta es \"desde la desregulación\", desde la ansiedad y la urgencia, no significa que tengas que cortar todo de golpe. Significa que primero te regulas (respiras, esperas, vuelves a tu calma) y después decides. Nunca al revés."
+    },
+    {
+      "type": "text",
+      "value": "Esa pequeña pausa entre el impulso y la acción es toda tu libertad. Es la diferencia entre que tu herida elija por ti y que elijas tú."
+    },
+    {
+      "type": "text",
+      "value": "IDEA 6 DE 6"
+    },
+    {
+      "type": "text",
+      "value": "Lo que te llevas de estas seis semanas"
+    },
+    {
+      "type": "text",
+      "value": "No vas a salir de aquí curada de un día para otro. Vas a salir con algo mejor: un cuerpo que empieza a entender que el amor no es una amenaza, que la calma no es sospechosa, que la paz no es aburrimiento sino el hogar donde por fin te puedes quedar."
+    },
+    {
+      "type": "text",
+      "value": "Aprendiste que tu cuerpo elige, que tiene tres velocidades, de dónde vienen, cómo leerlas y cómo entrenar la calma. Y aprendiste a hacerte la pregunta nueva. Eso no se desaprende. Es tuyo para siempre."
+    },
+    {
+      "type": "text",
+      "value": "PARA LLEVARTE"
+    },
+    {
+      "type": "text",
+      "value": "No vas a encontrar el amor que necesitas hasta que repares el sistema que elige por ti. Puedes cambiar de app, de ciudad, de estrategia, pero si no cambias tu programación interna, repites. La diferencia ya no la pone la suerte: la pones tú, eligiendo desde un cuerpo que aprendió a estar a salvo."
+    },
+    {
+      "type": "text",
+      "value": "Y la próxima vez que pienses \"por qué me engancho con quien me ignora\", ya tienes la pregunta nueva: ¿qué parte de mí sigue esperando una respuesta que nunca llegó? Esa parte ya no está sola. Ahora estás tú."
+    }
+  ],
+  "no-estas-loca:m6l2": [
+    {
+      "type": "text",
+      "value": "WORKSHEET DEL MÓDULO 6"
+    },
+    {
+      "type": "text",
+      "value": "Aprender a elegir"
+    },
+    {
+      "type": "text",
+      "value": "No decidas con la cabeza. Lee el cuerpo. Tu cuerpo, después de seis semanas, ya sabe responder."
+    },
+    {
+      "type": "text",
+      "value": "Parte A. El filtro de la elección"
+    },
+    {
+      "type": "text",
+      "value": "1. Piensa en la última persona que te atrajo con intensidad. Con ella, ¿tu cuerpo se expandía o se contraía? ¿se abría o se ponía en cáscaras de huevo?"
+    },
+    {
+      "type": "text",
+      "value": "2. ¿Qué versión de ti tenías que ser para mantener esa conexión? ¿La completa o una editada?"
+    },
+    {
+      "type": "text",
+      "value": "Parte B. Tu plan de regulación de bolsillo"
+    },
+    {
+      "type": "text",
+      "value": "Escribe cinco recursos concretos que ya sabes que te llevan a la calma (tu zona de aterrizaje del Módulo 2, tus microexperiencias del Módulo 5). Es tu botiquín para cuando el detective active la alerta roja."
+    },
+    {
+      "type": "text",
+      "value": "1."
+    },
+    {
+      "type": "text",
+      "value": "2."
+    },
+    {
+      "type": "text",
+      "value": "3."
+    },
+    {
+      "type": "text",
+      "value": "4."
+    },
+    {
+      "type": "text",
+      "value": "5."
+    },
+    {
+      "type": "text",
+      "value": "Parte C. Lo que cambió en seis semanas"
+    },
+    {
+      "type": "text",
+      "value": "1. ¿Qué entiendes hoy sobre ti que no entendías al empezar este programa?"
+    },
+    {
+      "type": "text",
+      "value": "2. ¿Qué señal de tu cuerpo aprendiste a reconocer que antes te pasaba por alto?"
+    },
+    {
+      "type": "text",
+      "value": "3. ¿Quién es hoy la persona que cuida a tu niña, lee su cuerpo, pone límites y elige desde la calma?"
+    }
+  ],
+  "no-estas-loca:m6l3": [
+    {
+      "type": "text",
+      "value": "LA CARTA FINAL"
+    },
+    {
+      "type": "text",
+      "value": "Cierra el programa escribiéndole a tu niña una última carta. Cuéntale todo lo que cambió en estas seis semanas. Dile quién es ahora la persona que la cuida, que lee su cuerpo, que pone límites y que elige desde la calma. Esa persona eres tú."
+    },
+    {
+      "type": "text",
+      "value": "Querida niña:"
+    },
+    {
+      "type": "text",
+      "value": "Al terminar el programa"
+    },
+    {
+      "type": "text",
+      "value": "Los sistemas nerviosos se reconfiguran con experiencias repetidas de seguridad, con límites, con vínculos donde no tengas que perseguir ni fingir. Lo que entrenaste estas seis semanas no termina: apenas empieza. Cada respiración larga, cada límite, cada silencio sin castigo es una ruta nueva que tu cuerpo va grabando."
+    },
+    {
+      "type": "text",
+      "value": "No estás loca. Nunca lo estuviste. Estabas desregulada, y la desregulación se entrena. Hoy ya sabes cómo."
+    },
+    {
+      "type": "text",
+      "value": "Con todo mi cariño,"
+    },
+    {
+      "type": "text",
+      "value": "Claudia Domínguez"
+    },
+    {
+      "type": "text",
+      "value": "Psicóloga · Huevos y Rosas"
     }
   ]
 }
