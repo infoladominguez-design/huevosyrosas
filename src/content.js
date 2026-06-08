@@ -40,6 +40,22 @@ export const about = {
   ],
 }
 
+export const relatable = {
+  eyebrow: '¿Te suena?',
+  title: 'Es domingo, 11 de la noche.',
+  paragraphs: [
+    'Todo está "bien": tienes trabajo, amigas, tu vida armada. Pero cuando se acaba el ruido de la semana, algo te pesa en el pecho y no sabes nombrarlo.',
+    'No estás rota. No estás loca. Lo que sientes tiene nombre, tiene origen y tiene salida. Aquí no vas a encontrar tips ni frases de amor propio: vas a encontrar una explicación.',
+  ],
+}
+
+export const membership = {
+  eyebrow: 'Membresía',
+  title: 'Acompáñate todo el camino',
+  text: 'Hazte miembra y accede a todos los programas de sanación emocional mientras los necesites. Un espacio para entenderte, a tu ritmo y sin prisa.',
+  cta: 'Hazte miembra',
+}
+
 export const contact = {
   title: 'Hablemos',
   text: '¿Tienes una duda sobre los programas o quieres contarme tu caso? Escríbeme, respondo a todo.',

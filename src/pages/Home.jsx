@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
-import { hero } from '../content.js'
+import { hero, relatable, membership } from '../content.js'
 import { courses, courseLessonCount } from '../data/catalog.js'
+import { MEMBERSHIP } from '../data/hotmart.js'
 import { useReviews } from '../lib/store.js'
 import { Stars } from '../components/ui.jsx'
 
@@ -57,6 +58,14 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="relatable">
+        <p className="hero__eyebrow">{relatable.eyebrow}</p>
+        <h2 className="section__title">{relatable.title}</h2>
+        {relatable.paragraphs.map((p, i) => (
+          <p className="relatable__text" key={i}>{p}</p>
+        ))}
+      </section>
+
       <section id="cursos">
         <h2 className="section__title">Programas</h2>
         <div className="course-grid">
@@ -64,6 +73,15 @@ export default function Home() {
             <CourseCard key={c.id} course={c} />
           ))}
         </div>
+      </section>
+
+      <section className="membership">
+        <p className="hero__eyebrow">{membership.eyebrow}</p>
+        <h2 className="section__title">{membership.title}</h2>
+        <p className="membership__text">{membership.text}</p>
+        <a className="btn btn--primary btn--cta" href={MEMBERSHIP.checkout} target="_blank" rel="noreferrer">
+          {membership.cta}
+        </a>
       </section>
     </>
   )
