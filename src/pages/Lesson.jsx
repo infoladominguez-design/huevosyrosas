@@ -6,7 +6,19 @@ import { fetchLessonContent } from '../lib/content.js'
 import { programCheckout, MEMBERSHIP } from '../data/hotmart.js'
 import NotFound from './NotFound.jsx'
 
-function Block({ block }) {
+// Clasifica un bloque de texto: etiqueta en mayúsculas, título o párrafo.
+function classifyText(value) {
+  const t = value.trim()
+  const letters = t.replace(/[^A-Za-zÁÉÍÓÚÜÑáéíóúüñ]/g, '')
+  const isUpper = letters.length > 1 && letters === letters.toUpperCase()
+  const noPunct = !/[.,;:!?"”»…]$/.test(t)
+  const words = t.split(/\s+/).length
+  if (t.length <= 74 && isUpper) return 'label'
+  if (t.length <= 74 && noPunct && words <= 11 && !/^\d/.test(t)) return 'heading'
+  return 'text'
+}
+
+function Block({ block, lead }) {
   switch (block.type) {
     case 'video':
       return (
@@ -40,8 +52,14 @@ function Block({ block }) {
         </a>
       )
     case 'text':
-    default:
-      return <p className="block block--text">{block.value}</p>
+    default: {
+      const kind = classifyText(block.value)
+      if (kind === 'label') return <p className="lesson-label">{block.value}</p>
+      if (kind === 'heading') return <h2 className="lesson-h">{block.value}</h2>
+      return (
+        <p className={'block block--text' + (lead ? ' block--lead' : '')}>{block.value}</p>
+      )
+    }
   }
 }
 
@@ -168,9 +186,14 @@ export default function Lesson() {
       {unlocked && (
         <>
           <div className="lesson__content">
-            {state.blocks.map((b, i) => (
-              <Block block={b} key={i} />
-            ))}
+            {(() => {
+              const leadIdx = state.blocks.findIndex(
+                (b) => b.type === 'text' && classifyText(b.value) === 'text',
+              )
+              return state.blocks.map((b, i) => (
+                <Block block={b} key={i} lead={i === leadIdx} />
+              ))
+            })()}
           </div>
 
           <div className="lesson__bar">
