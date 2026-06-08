@@ -1,44 +1,8 @@
 import { Link } from 'react-router-dom'
 import { hero, relatable, membership } from '../content.js'
-import { courses, courseLessonCount } from '../data/catalog.js'
+import { programs } from '../data/programsCatalog.js'
 import { MEMBERSHIP } from '../data/hotmart.js'
-import { useReviews } from '../lib/store.js'
-import { Stars } from '../components/ui.jsx'
-
-function CourseCard({ course }) {
-  const { average, count } = useReviews(course.id)
-  return (
-    <Link className="course-card" to={`/cursos/${course.id}`}>
-      <div
-        className="course-card__cover"
-        style={{ backgroundImage: `url(${course.image})` }}
-      >
-        <span className="course-card__badge" style={{ background: course.accent }}>
-          {course.cover}
-        </span>
-      </div>
-      <div className="course-card__body">
-        <div className="course-card__tags">
-          {course.tags.map((t) => (
-            <span className="tag" key={t}>{t}</span>
-          ))}
-        </div>
-        <h3 className="course-card__title">{course.title}</h3>
-        <p className="course-card__subtitle">{course.subtitle}</p>
-        <div className="course-card__meta">
-          <Stars value={Math.round(average)} />
-          <span>{count ? `${average.toFixed(1)} (${count})` : 'Nuevo'}</span>
-          <span>·</span>
-          <span>{courseLessonCount(course)} lecciones</span>
-        </div>
-        <div className="course-card__footer">
-          <span className="course-card__price">{course.price} €</span>
-          <span className="course-card__level">{course.level}</span>
-        </div>
-      </div>
-    </Link>
-  )
-}
+import ProgramCard from '../components/ProgramCard.jsx'
 
 export default function Home() {
   return (
@@ -53,7 +17,7 @@ export default function Home() {
           estás loca: lo que sientes tiene origen y tiene salida. Empecemos.
         </p>
         <div className="hero__actions">
-          <Link className="btn btn--primary btn--cta" to="/cursos">Ver programas</Link>
+          <Link className="btn btn--primary btn--cta" to="/programas">Ver programas</Link>
           <Link className="btn btn--ghost" to="/comunidad">Unirme a la comunidad</Link>
         </div>
       </section>
@@ -66,11 +30,11 @@ export default function Home() {
         ))}
       </section>
 
-      <section id="cursos">
-        <h2 className="section__title">Programas</h2>
-        <div className="course-grid">
-          {courses.map((c) => (
-            <CourseCard key={c.id} course={c} />
+      <section id="programas">
+        <h2 className="section__title" style={{ textAlign: 'center' }}>Programas</h2>
+        <div className="programs-grid">
+          {programs.map((p) => (
+            <ProgramCard key={p.slug} p={p} />
           ))}
         </div>
       </section>

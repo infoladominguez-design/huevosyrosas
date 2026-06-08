@@ -1220,3 +1220,179 @@ main > section {
     flex-direction: column;
   }
 }
+
+/* ============================================================
+   Página de programas (catálogo Mujeres Rosa)
+   ============================================================ */
+.programs-hero {
+  text-align: center;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.pcard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pcard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pcard--soon {
+  cursor: default;
+}
+
+.pcard--soon:hover {
+  transform: none;
+  box-shadow: var(--shadow-sm);
+}
+
+.pcard__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.pcard__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.pcard--soon .pcard__media img {
+  filter: grayscale(0.35) opacity(0.9);
+}
+
+.pcard__num {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: grid;
+  place-items: center;
+  min-width: 2.1rem;
+  height: 2.1rem;
+  padding: 0 0.5rem;
+  border-radius: 999px;
+  background: rgba(28, 20, 36, 0.78);
+  color: var(--bg-3);
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.pcard__body {
+  padding: 1.5rem 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  flex: 1;
+}
+
+.pcard__status {
+  font-family: var(--label);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.92rem;
+  color: var(--ink);
+  opacity: 0.65;
+}
+
+.pcard__title {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.pcard__subtitle {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.pcard__desc {
+  color: #4a4048;
+  font-size: 0.98rem;
+  margin: 0.3rem 0 0;
+}
+
+.pcard__cta {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.pcard:hover .pcard__cta {
+  color: var(--pcard-accent, var(--gold-dark));
+}
+
+.pcard__cta--soon {
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+/* Cómo funciona */
+.steps {
+  background: var(--bg-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  max-width: none !important;
+}
+
+.steps__grid {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.step {
+  text-align: center;
+  padding: 1rem;
+}
+
+.step__num {
+  display: inline-grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  color: var(--gold-dark);
+  font-family: var(--display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+
+.step__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.step__desc {
+  color: var(--muted);
+  margin: 0;
+  font-size: 0.98rem;
+}
