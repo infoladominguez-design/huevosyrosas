@@ -1,9 +1,9 @@
 import { Link, NavLink, Outlet } from 'react-router-dom'
 import { brand } from '../content.js'
-import { useProfile } from '../lib/store.js'
+import { useAuth } from '../lib/AuthContext.jsx'
 
 function Nav() {
-  const { name, setName } = useProfile()
+  const { user, configured } = useAuth()
   return (
     <header className="nav">
       <Link className="nav__brand" to="/">
@@ -15,13 +15,12 @@ function Nav() {
         <NavLink to="/comunidad">Comunidad</NavLink>
         <NavLink to="/nosotros">Nosotros</NavLink>
       </nav>
-      <input
-        className="nav__name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Tu nombre"
-        aria-label="Tu nombre"
-      />
+      {configured &&
+        (user ? (
+          <Link className="btn btn--ghost nav__cta" to="/cuenta">Mi cuenta</Link>
+        ) : (
+          <Link className="btn btn--primary nav__cta" to="/entrar">Entrar</Link>
+        ))}
     </header>
   )
 }

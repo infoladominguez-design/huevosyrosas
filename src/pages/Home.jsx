@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { hero } from '../content.js'
-import { courses, courseLessonCount } from '../data/courses.js'
+import { courses, courseLessonCount } from '../data/catalog.js'
 import { useReviews } from '../lib/store.js'
 import { Stars } from '../components/ui.jsx'
 

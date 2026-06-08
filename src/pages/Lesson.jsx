@@ -1,7 +1,9 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { getCourse, allLessons } from '../data/courses.js'
+import { getCourse, allLessons } from '../data/catalog.js'
 import { useProfile, useProgress, useComments, formatDate } from '../lib/store.js'
+import { fetchLessonContent } from '../lib/content.js'
+import { programCheckout, MEMBERSHIP } from '../data/hotmart.js'
 import NotFound from './NotFound.jsx'
 
 function Block({ block }) {
@@ -43,6 +45,36 @@ function Block({ block }) {
   }
 }
 
+function Locked({ reason, courseId }) {
+  const buyUrl = programCheckout(courseId)
+  return (
+    <div className="locked-box">
+      <div className="locked-box__icon">🔒</div>
+      <h2 className="locked-box__title">
+        {reason === 'login' ? 'Este contenido es para compradoras' : 'Desbloquea este programa'}
+      </h2>
+      <p className="muted">
+        {reason === 'login'
+          ? 'Si ya lo compraste en Hotmart, inicia sesión con ese mismo email para acceder.'
+          : 'Consigue acceso de por vida comprando el programa, o accede a todo con la membresía.'}
+      </p>
+      <div className="hero__actions" style={{ justifyContent: 'flex-start', marginTop: '1rem' }}>
+        {reason === 'login' && (
+          <Link className="btn btn--primary" to="/entrar">Iniciar sesión</Link>
+        )}
+        {buyUrl && (
+          <a className="btn btn--primary btn--cta" href={buyUrl} target="_blank" rel="noreferrer">
+            Comprar programa
+          </a>
+        )}
+        <a className="btn btn--ghost" href={MEMBERSHIP.checkout} target="_blank" rel="noreferrer">
+          Hazte miembra
+        </a>
+      </div>
+    </div>
+  )
+}
+
 function Comments({ lessonKey }) {
   const { name } = useProfile()
   const { items, add, remove } = useComments(lessonKey)
@@ -81,7 +113,7 @@ function Comments({ lessonKey }) {
             <p className="comment__text">{c.text}</p>
           </li>
         ))}
-        {!items.length && <p className="muted">Sé el primero en comentar esta lección.</p>}
+        {!items.length && <p className="muted">Sé la primera en comentar esta lección.</p>}
       </ul>
     </div>
   )
@@ -91,18 +123,34 @@ export default function Lesson() {
   const { courseId, moduleId, lessonId } = useParams()
   const course = getCourse(courseId)
   const { isDone, toggle } = useProgress(courseId)
+  const [state, setState] = useState({ status: 'loading' })
 
-  if (!course) return <NotFound />
-
-  const lessons = allLessons(course)
+  const lessons = course ? allLessons(course) : []
   const index = lessons.findIndex((l) => l.id === lessonId && l.moduleId === moduleId)
   const lesson = lessons[index]
-  if (!lesson) return <NotFound />
+
+  useEffect(() => {
+    let active = true
+    setState({ status: 'loading' })
+    if (!lesson) return
+    fetchLessonContent(courseId, lessonId, lesson.free).then((r) => {
+      if (!active) return
+      if (r.blocks) setState({ status: 'ok', blocks: r.blocks })
+      else if (r.locked) setState({ status: 'locked', reason: r.reason })
+      else setState({ status: 'error' })
+    })
+    return () => {
+      active = false
+    }
+  }, [courseId, lessonId, lesson?.free])
+
+  if (!course || !lesson) return <NotFound />
 
   const prev = lessons[index - 1]
   const next = lessons[index + 1]
   const lessonKey = `${courseId}:${moduleId}:${lessonId}`
   const linkTo = (l) => `/cursos/${courseId}/${l.moduleId}/${l.id}`
+  const unlocked = state.status === 'ok'
 
   return (
     <section className="lesson">
@@ -111,32 +159,42 @@ export default function Lesson() {
       <p className="lesson__eyebrow">{lesson.moduleTitle} · {lesson.duration}</p>
       <h1 className="lesson__title">{lesson.title}</h1>
 
-      <div className="lesson__content">
-        {lesson.blocks.map((b, i) => (
-          <Block block={b} key={i} />
-        ))}
-      </div>
+      {state.status === 'loading' && <p className="muted">Cargando…</p>}
+      {state.status === 'error' && (
+        <p className="muted">No se pudo cargar el contenido. Inténtalo de nuevo.</p>
+      )}
+      {state.status === 'locked' && <Locked reason={state.reason} courseId={courseId} />}
 
-      <div className="lesson__bar">
-        <button
-          className={'btn ' + (isDone(lessonId) ? 'btn--ghost' : 'btn--primary')}
-          onClick={() => toggle(lessonId)}
-        >
-          {isDone(lessonId) ? '✅ Completada' : 'Marcar como completada'}
-        </button>
-        <div className="lesson__nav">
-          {prev ? (
-            <Link className="btn btn--ghost" to={linkTo(prev)}>← Anterior</Link>
-          ) : <span />}
-          {next ? (
-            <Link className="btn btn--ghost" to={linkTo(next)}>Siguiente →</Link>
-          ) : (
-            <Link className="btn btn--ghost" to={`/cursos/${courseId}`}>Finalizar curso</Link>
-          )}
-        </div>
-      </div>
+      {unlocked && (
+        <>
+          <div className="lesson__content">
+            {state.blocks.map((b, i) => (
+              <Block block={b} key={i} />
+            ))}
+          </div>
 
-      <Comments lessonKey={lessonKey} />
+          <div className="lesson__bar">
+            <button
+              className={'btn ' + (isDone(lessonId) ? 'btn--ghost' : 'btn--primary')}
+              onClick={() => toggle(lessonId)}
+            >
+              {isDone(lessonId) ? '✅ Completada' : 'Marcar como completada'}
+            </button>
+            <div className="lesson__nav">
+              {prev ? (
+                <Link className="btn btn--ghost" to={linkTo(prev)}>← Anterior</Link>
+              ) : <span />}
+              {next ? (
+                <Link className="btn btn--ghost" to={linkTo(next)}>Siguiente →</Link>
+              ) : (
+                <Link className="btn btn--ghost" to={`/cursos/${courseId}`}>Finalizar</Link>
+              )}
+            </div>
+          </div>
+
+          <Comments lessonKey={lessonKey} />
+        </>
+      )}
     </section>
   )
 }

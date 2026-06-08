@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import { getCourse, courseLessonCount } from '../data/courses.js'
+import { getCourse, courseLessonCount } from '../data/catalog.js'
 import { useProfile, useProgress, useReviews, formatDate } from '../lib/store.js'
+import { useAuth } from '../lib/AuthContext.jsx'
+import { useEntitlements } from '../lib/entitlements.js'
+import { programCheckout, MEMBERSHIP } from '../data/hotmart.js'
 import { Stars, ProgressBar } from '../components/ui.jsx'
 import NotFound from './NotFound.jsx'
 
@@ -40,7 +43,7 @@ function Reviews({ courseId }) {
           rows={3}
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="¿Qué te ha parecido el curso?"
+          placeholder="¿Qué te ha parecido el programa?"
         />
         <button className="btn btn--primary" type="submit">Publicar reseña</button>
       </form>
@@ -57,7 +60,7 @@ function Reviews({ courseId }) {
             <p className="comment__text">{r.text}</p>
           </li>
         ))}
-        {!items.length && <p className="muted">Aún no hay reseñas. ¡Sé el primero!</p>}
+        {!items.length && <p className="muted">Aún no hay reseñas. ¡Sé la primera!</p>}
       </ul>
     </div>
   )
@@ -66,16 +69,21 @@ function Reviews({ courseId }) {
 export default function CourseDetail() {
   const { courseId } = useParams()
   const course = getCourse(courseId)
+  const { user } = useAuth()
+  const { hasProgram } = useEntitlements()
   const { isDone, count } = useProgress(courseId)
 
   if (!course) return <NotFound />
 
   const total = courseLessonCount(course)
+  const access = hasProgram(course.id)
   const firstLesson = course.modules[0]?.lessons[0]
+  const buyUrl = programCheckout(course.id)
+  const lessonLink = (m, l) => `/cursos/${course.id}/${m.id}/${l.id}`
 
   return (
     <section>
-      <Link className="back-link" to="/cursos">← Todos los cursos</Link>
+      <Link className="back-link" to="/cursos">← Todos los programas</Link>
 
       <div className="course-hero">
         <div
@@ -96,37 +104,94 @@ export default function CourseDetail() {
             <span>📚 {total} lecciones</span>
             <span>🎯 {course.level}</span>
           </div>
-          <div className="course-hero__actions">
-            {firstLesson && (
-              <Link
-                className="btn btn--primary btn--cta"
-                to={`/cursos/${course.id}/${course.modules[0].id}/${firstLesson.id}`}
-              >
-                {count > 0 ? 'Continuar curso' : `Empezar · ${course.price} €`}
-              </Link>
-            )}
-          </div>
-          <ProgressBar value={count} total={total} />
+
+          {access ? (
+            <>
+              <div className="course-hero__actions">
+                {firstLesson && (
+                  <Link
+                    className="btn btn--primary btn--cta"
+                    to={lessonLink(course.modules[0], firstLesson)}
+                  >
+                    {count > 0 ? 'Continuar programa' : 'Empezar ahora'}
+                  </Link>
+                )}
+              </div>
+              <ProgressBar value={count} total={total} />
+            </>
+          ) : (
+            <>
+              <div className="course-hero__actions">
+                {buyUrl && (
+                  <a
+                    className="btn btn--primary btn--cta"
+                    href={buyUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Comprar · {course.price} €
+                  </a>
+                )}
+                <a
+                  className="btn btn--ghost"
+                  href={MEMBERSHIP.checkout}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Hazte miembra
+                </a>
+              </div>
+              <p className="muted" style={{ fontSize: '0.9rem' }}>
+                {firstLesson && (
+                  <Link to={lessonLink(course.modules[0], firstLesson)} style={{ color: 'var(--pink)', fontWeight: 600 }}>
+                    Ver vista previa gratis
+                  </Link>
+                )}
+                {!user && (
+                  <>
+                    {' · '}
+                    ¿Ya lo compraste?{' '}
+                    <Link to="/entrar" style={{ color: 'var(--pink)', fontWeight: 600 }}>
+                      Inicia sesión
+                    </Link>
+                  </>
+                )}
+              </p>
+            </>
+          )}
         </div>
       </div>
 
       <div className="curriculum">
-        <h2 className="section__title">Contenido del curso</h2>
+        <h2 className="section__title">Contenido del programa</h2>
         {course.modules.map((m, mi) => (
           <div className="module" key={m.id}>
             <h3 className="module__title">
               <span className="module__num">{mi + 1}</span> {m.title}
             </h3>
             <ul className="lesson-list">
-              {m.lessons.map((l) => (
-                <li key={l.id}>
-                  <Link className="lesson-row" to={`/cursos/${course.id}/${m.id}/${l.id}`}>
-                    <span className="lesson-row__check">{isDone(l.id) ? '✅' : '▶️'}</span>
-                    <span className="lesson-row__title">{l.title}</span>
-                    <span className="lesson-row__dur">{l.duration}</span>
-                  </Link>
-                </li>
-              ))}
+              {m.lessons.map((l) => {
+                const unlocked = l.free || access
+                const icon = isDone(l.id) ? '✅' : l.free ? '👁' : unlocked ? '▶️' : '🔒'
+                return (
+                  <li key={l.id}>
+                    {unlocked ? (
+                      <Link className="lesson-row" to={lessonLink(m, l)}>
+                        <span className="lesson-row__check">{icon}</span>
+                        <span className="lesson-row__title">{l.title}</span>
+                        {l.free && <span className="tag tag--accent">Gratis</span>}
+                        <span className="lesson-row__dur">{l.duration}</span>
+                      </Link>
+                    ) : (
+                      <div className="lesson-row lesson-row--locked">
+                        <span className="lesson-row__check">{icon}</span>
+                        <span className="lesson-row__title">{l.title}</span>
+                        <span className="lesson-row__dur">{l.duration}</span>
+                      </div>
+                    )}
+                  </li>
+                )
+              })}
             </ul>
           </div>
         ))}
