@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { getCourse, allLessons } from '../data/catalog.js'
-import { useProfile, useProgress, useComments, formatDate } from '../lib/store.js'
+import { useProfile, useProgress, useComments, formatDate, useStored } from '../lib/store.js'
 import { fetchLessonContent } from '../lib/content.js'
 import { programCheckout, MEMBERSHIP } from '../data/hotmart.js'
 import NotFound from './NotFound.jsx'
@@ -89,6 +89,82 @@ function Locked({ reason, courseId }) {
           Hazte miembra
         </a>
       </div>
+    </div>
+  )
+}
+
+const CLAUDIA_EMAIL = 'infoladominguez@gmail.com'
+
+function isQuestion(v) {
+  const t = v.trim()
+  return (
+    /^\d+[.)]/.test(t) ||
+    /^[a-eA-E]\)/.test(t) ||
+    t.endsWith('?') ||
+    (t.endsWith(':') && t.length < 160)
+  )
+}
+
+// Worksheet rellenable: cada pregunta tiene su recuadro de respuesta,
+// se guarda en el navegador y se puede enviar por email a Claudia.
+function Worksheet({ blocks, courseTitle, lessonTitle, storageKey }) {
+  const [answers, setAnswers] = useStored(`answers:${storageKey}`, {})
+  const qIdx = blocks
+    .map((b, i) => (b.type === 'text' && isQuestion(b.value) ? i : -1))
+    .filter((i) => i >= 0)
+  const hasQ = qIdx.length > 0
+  const setA = (k, val) => setAnswers((p) => ({ ...p, [k]: val }))
+
+  const buildMailto = () => {
+    const lines = [`Programa: ${courseTitle}`, lessonTitle, '', '— MIS RESPUESTAS —', '']
+    if (hasQ) {
+      qIdx.forEach((i) => {
+        lines.push(blocks[i].value)
+        lines.push((answers[i] || '').trim() || '(sin responder)')
+        lines.push('')
+      })
+    } else {
+      lines.push((answers.all || '').trim() || '(sin responder)')
+    }
+    const subject = `Mis respuestas — ${lessonTitle}`
+    return `mailto:${CLAUDIA_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join('\n'))}`
+  }
+
+  return (
+    <div className="lesson__content worksheet">
+      <p className="worksheet__intro">
+        ✍️ Responde a tu ritmo. Tus respuestas se guardan en este dispositivo y
+        puedes enviármelas cuando quieras a <strong>{CLAUDIA_EMAIL}</strong>.
+      </p>
+
+      {blocks.map((b, i) => (
+        <div key={i}>
+          <Block block={b} />
+          {hasQ && qIdx.includes(i) && (
+            <textarea
+              className="form__input worksheet__answer"
+              rows={3}
+              value={answers[i] || ''}
+              onChange={(e) => setA(i, e.target.value)}
+              placeholder="Escribe tu respuesta…"
+            />
+          )}
+        </div>
+      ))}
+
+      {!hasQ && (
+        <textarea
+          className="form__input worksheet__answer"
+          rows={6}
+          value={answers.all || ''}
+          onChange={(e) => setA('all', e.target.value)}
+          placeholder="Escribe aquí tu respuesta…"
+        />
+      )}
+
+      <a className="btn btn--primary btn--cta worksheet__send" href={buildMailto()}>
+        Enviarme tus respuestas
+      </a>
     </div>
   )
 }
@@ -185,16 +261,25 @@ export default function Lesson() {
 
       {unlocked && (
         <>
-          <div className="lesson__content">
-            {(() => {
-              const leadIdx = state.blocks.findIndex(
-                (b) => b.type === 'text' && classifyText(b.value) === 'text',
-              )
-              return state.blocks.map((b, i) => (
-                <Block block={b} key={i} lead={i === leadIdx} />
-              ))
-            })()}
-          </div>
+          {/ejercicio|worksheet/i.test(lesson.title) ? (
+            <Worksheet
+              blocks={state.blocks}
+              courseTitle={course.title}
+              lessonTitle={lesson.title}
+              storageKey={lessonKey}
+            />
+          ) : (
+            <div className="lesson__content">
+              {(() => {
+                const leadIdx = state.blocks.findIndex(
+                  (b) => b.type === 'text' && classifyText(b.value) === 'text',
+                )
+                return state.blocks.map((b, i) => (
+                  <Block block={b} key={i} lead={i === leadIdx} />
+                ))
+              })()}
+            </div>
+          )}
 
           <div className="lesson__bar">
             <button

@@ -1929,3 +1929,28 @@ main > section {
 .block--lead {
   font-size: 1.28rem !important;
 }
+
+/* ============================================================
+   Worksheet rellenable
+   ============================================================ */
+.worksheet__intro {
+  background: var(--bg-3);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  color: #4a4048;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+}
+
+.worksheet__answer {
+  margin-top: 0.6rem;
+  margin-bottom: 0.4rem;
+  background: var(--bg-3);
+}
+
+.worksheet__send {
+  align-self: flex-start;
+  margin-top: 1rem;
+}
