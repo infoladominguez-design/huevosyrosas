@@ -1622,3 +1622,166 @@ main > section {
     text-align: left;
   }
 }
+
+/* ============================================================
+   Eventos (estilo Mujeres Rosa)
+   ============================================================ */
+.events-hero {
+  text-align: center;
+  background: var(--ink);
+  color: #fff;
+  max-width: none !important;
+}
+
+.events-hero > * {
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.events-hero__eyebrow {
+  font-family: var(--label);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: #E8896A;
+  margin: 0 0 1rem;
+}
+
+.events-hero__title {
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 1.25rem;
+}
+
+.events-hero__title em {
+  font-style: italic;
+  color: #E8896A;
+}
+
+.events-hero__subtitle {
+  max-width: 52ch;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.event-card__date {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px;
+  padding: 0.5rem 0.85rem;
+  line-height: 1;
+  box-shadow: var(--shadow-sm);
+}
+
+.event-card__day {
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: var(--ink);
+}
+
+.event-card__month {
+  font-family: var(--label);
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  color: var(--gold-dark);
+}
+
+.event-card__year {
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+.event-card__media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.event-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-card__body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.event-card__tag {
+  align-self: flex-start;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+}
+
+.event-card__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0.2rem 0 0;
+}
+
+.event-card__subtitle {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.event-card__desc {
+  color: #4a4048;
+  margin: 0.2rem 0 0;
+  font-size: 0.98rem;
+}
+
+.event-card__foot {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.event-card__time {
+  font-weight: 600;
+  color: var(--ink);
+}
