@@ -26,7 +26,7 @@ export function AuthProvider({ children }) {
     if (!supabase) throw new Error('Auth no configurada')
     return supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: `${window.location.origin}/cuenta` },
+      options: { emailRedirectTo: `${window.location.origin}/mi-espacio` },
     })
   }
 

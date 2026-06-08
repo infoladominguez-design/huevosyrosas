@@ -1785,3 +1785,83 @@ main > section {
   font-weight: 600;
   color: var(--ink);
 }
+
+/* ============================================================
+   Mi espacio (área de miembros)
+   ============================================================ */
+.space-hero {
+  text-align: center;
+  padding-bottom: 1.5rem !important;
+}
+
+.space-hero__title {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.space-hero__title em {
+  font-style: italic;
+  color: var(--rose-deep);
+}
+
+.space-hero__sub {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.space-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.space-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.space-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.space-card__cover {
+  position: relative;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.space-card--locked .space-card__cover img,
+.space-card--locked .space-card__cover {
+  filter: saturate(0.9);
+}
+
+.space-card__body {
+  padding: 1.5rem 1.35rem 1.35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  flex: 1;
+}
+
+.space-card__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.space-card__cta {
+  margin-top: auto;
+  font-weight: 700;
+  color: var(--gold-dark);
+  font-size: 0.92rem;
+}

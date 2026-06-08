@@ -10,6 +10,7 @@ import Events from './pages/Events.jsx'
 import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import Account from './pages/Account.jsx'
+import MemberSpace from './pages/MemberSpace.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="eventos" element={<Events />} />
         <Route path="nosotros" element={<About />} />
         <Route path="entrar" element={<Login />} />
+        <Route path="mi-espacio" element={<MemberSpace />} />
         <Route path="cuenta" element={<Account />} />
         <Route path="*" element={<NotFound />} />
       </Route>

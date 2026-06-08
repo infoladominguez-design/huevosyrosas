@@ -17,12 +17,9 @@ function Nav() {
         <NavLink to="/comunidad">Comunidad</NavLink>
         <NavLink to="/nosotros">Nosotros</NavLink>
       </nav>
-      {configured &&
-        (user ? (
-          <Link className="btn btn--ghost nav__cta" to="/cuenta">Mi cuenta</Link>
-        ) : (
-          <Link className="btn btn--primary nav__cta" to="/entrar">Entrar</Link>
-        ))}
+      <Link className={'nav__cta btn ' + (user ? 'btn--ghost' : 'btn--primary')} to="/mi-espacio">
+        Mi espacio
+      </Link>
     </header>
   )
 }
