@@ -44,10 +44,10 @@ function CourseRow({ course }) {
 export default function Courses() {
   return (
     <section>
-      <h2 className="section__title">Todos los cursos</h2>
+      <h2 className="section__title">Todos los programas</h2>
       <p className="lead">
-        Elige un curso, avanza módulo a módulo y comparte tus dudas con el resto
-        de la comunidad.
+        Elige un programa, avanza capítulo a capítulo con sus ejercicios y
+        comparte el proceso con el resto de la comunidad.
       </p>
       <div className="course-grid">
         {courses.map((c) => (

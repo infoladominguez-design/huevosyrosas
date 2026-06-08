@@ -1,46 +1,46 @@
 // Central place for editable copy. Tweak text here without touching layout.
 export const brand = {
   name: 'Huevos y Rosas',
-  tagline: 'Lo cotidiano y lo extraordinario, en la misma mesa.',
+  tagline: 'El arte de organizar las emociones.',
   email: 'hola@huevosyrosas.com',
 }
 
 export const hero = {
-  eyebrow: 'Una marca de detalles',
+  eyebrow: 'Programas de desarrollo emocional',
   title: 'Huevos y Rosas',
   subtitle:
-    'Celebramos los pequeños rituales: el desayuno que arranca el día y el gesto que lo hace memorable. Cosas sencillas, hechas con cuidado.',
-  ctaPrimary: 'Conócenos',
-  ctaSecondary: 'Escríbenos',
+    'Programas para entender por qué sientes lo que sientes. Nada de tips ni frases de amor propio: una explicación real, capítulo a capítulo, con ejercicios para reorganizar tus emociones.',
+  ctaPrimary: 'Ver programas',
+  ctaSecondary: 'Conoce a Claudia',
 }
 
 export const features = [
   {
-    icon: '🥚',
-    title: 'Lo esencial',
-    text: 'Empezamos por lo básico bien hecho. Sin atajos, sin adornos vacíos.',
+    icon: '🧩',
+    title: 'Una explicación, no un parche',
+    text: 'Entiende de dónde viene tu dolor y por qué se repite. Cuando entiendes, dejas de culparte.',
   },
   {
-    icon: '🌹',
-    title: 'El detalle',
-    text: 'Un toque de belleza en lo de todos los días. Ahí vive la diferencia.',
+    icon: '✍️',
+    title: 'Ejercicios que mueven',
+    text: 'Cada capítulo incluye un ejercicio práctico para llevar lo que lees a tu vida real.',
   },
   {
-    icon: '✨',
-    title: 'El equilibrio',
-    text: 'Función y forma, juntas. Lo útil que además da gusto mirar.',
+    icon: '🤝',
+    title: 'Un espacio honesto',
+    text: 'Una comunidad donde nombrar lo que sientes sin filtros, sin vergüenza y sin juicio.',
   },
 ]
 
 export const about = {
-  title: 'Quiénes somos',
+  title: 'Quién está detrás',
   paragraphs: [
-    'Huevos y Rosas nace de una idea simple: lo extraordinario casi siempre se esconde en lo ordinario. En un buen desayuno. En una flor sobre la mesa. En hacer las cosas con intención.',
-    'Somos una marca de detalles cuidados, pensada para quienes disfrutan de la vida sin complicarla.',
+    'Soy Claudia Domínguez. Escribo y acompaño a mujeres que lo tienen todo "bien" y aun así sienten un peso en el pecho que no saben nombrar.',
+    'No te voy a decir que te ames más. Te voy a dar algo que casi nadie te da: una explicación de por qué te duele, de dónde viene, y una salida real. Incómoda y lenta, pero real.',
   ],
 }
 
 export const contact = {
   title: 'Hablemos',
-  text: 'Cuéntanos tu idea, tu pregunta o tu proyecto. Respondemos a todo.',
+  text: '¿Tienes una duda sobre los programas o quieres contarme tu caso? Escríbeme, respondo a todo.',
 }

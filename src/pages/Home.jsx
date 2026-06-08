@@ -45,20 +45,20 @@ export default function Home() {
       <section className="hero" id="top">
         <p className="hero__eyebrow">{hero.eyebrow}</p>
         <h1 className="hero__title">
-          Aprende lo cotidiano,<br />hazlo <em>extraordinario</em>.
+          Lo que sientes tiene <em>nombre</em>.
         </h1>
         <p className="hero__subtitle">
-          Cursos online sobre cocina, flores y los pequeños detalles que hacen
-          memorable la vida diaria. Aprende a tu ritmo, en comunidad.
+          Programas de desarrollo emocional para mujeres. No estás rota, ni
+          estás loca: lo que sientes tiene origen y tiene salida. Empecemos.
         </p>
         <div className="hero__actions">
-          <Link className="btn btn--primary btn--cta" to="/cursos">Ver cursos</Link>
+          <Link className="btn btn--primary btn--cta" to="/cursos">Ver programas</Link>
           <Link className="btn btn--ghost" to="/comunidad">Unirme a la comunidad</Link>
         </div>
       </section>
 
       <section id="cursos">
-        <h2 className="section__title">Cursos destacados</h2>
+        <h2 className="section__title">Programas</h2>
         <div className="course-grid">
           {courses.map((c) => (
             <CourseCard key={c.id} course={c} />

@@ -11,7 +11,7 @@ function Nav() {
         {brand.name}
       </Link>
       <nav className="nav__links">
-        <NavLink to="/cursos">Cursos</NavLink>
+        <NavLink to="/cursos">Programas</NavLink>
         <NavLink to="/comunidad">Comunidad</NavLink>
         <NavLink to="/nosotros">Nosotros</NavLink>
       </nav>
