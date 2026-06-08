@@ -5,6 +5,7 @@ import Courses from './pages/Courses.jsx'
 import CourseDetail from './pages/CourseDetail.jsx'
 import Lesson from './pages/Lesson.jsx'
 import Forum from './pages/Forum.jsx'
+import Blog from './pages/Blog.jsx'
 import About from './pages/About.jsx'
 import Login from './pages/Login.jsx'
 import Account from './pages/Account.jsx'
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="cursos/:courseId" element={<CourseDetail />} />
         <Route path="cursos/:courseId/:moduleId/:lessonId" element={<Lesson />} />
         <Route path="comunidad" element={<Forum />} />
+        <Route path="blog" element={<Blog />} />
         <Route path="nosotros" element={<About />} />
         <Route path="entrar" element={<Login />} />
         <Route path="cuenta" element={<Account />} />

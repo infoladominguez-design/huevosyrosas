@@ -1396,3 +1396,229 @@ main > section {
   margin: 0;
   font-size: 0.98rem;
 }
+
+/* ============================================================
+   Blog (estilo Mujeres Rosa)
+   ============================================================ */
+.blog-hero {
+  max-width: none !important;
+  text-align: left;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.blog-hero > * {
+  max-width: var(--maxw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-hero__eyebrow {
+  font-family: var(--label);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  color: #E8896A;
+  margin: 0 0 1.25rem;
+}
+
+.blog-hero__title {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 1.25rem;
+  line-height: 1.05;
+}
+
+.blog-hero__title em {
+  font-style: italic;
+  color: #E8896A;
+}
+
+.blog-hero__lav {
+  color: #A99BD4;
+}
+
+.blog-hero__subtitle {
+  max-width: 540px;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.68);
+  margin: 0 0 2rem;
+}
+
+.blog-hero__search {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  font: inherit;
+  padding: 0.85rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.blog-hero__search::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.blog-hero__search:focus {
+  outline: none;
+  border-color: #E8896A;
+}
+
+.blog-filters {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-filters__inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 1rem clamp(1rem, 5vw, 2rem);
+}
+
+.blog-pill {
+  flex-shrink: 0;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  background: var(--bg-2);
+  color: #5A4A6A;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.blog-pill--active {
+  background: var(--ink);
+  color: #fff;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.article-card {
+  display: block;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.article-card--featured {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.article-card__media {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.article-card--featured .article-card__media {
+  aspect-ratio: auto;
+  height: 100%;
+  min-height: 280px;
+}
+
+.article-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.article-card__cat {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+}
+
+.article-card__body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.article-card__title {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.article-card__excerpt {
+  color: var(--muted);
+  margin: 0;
+  font-size: 1rem;
+}
+
+.article-card__quote {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--rose-deep);
+  margin: 0.4rem 0 0;
+}
+
+.article-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.article-card__cta {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--gold-dark);
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+@media (max-width: 720px) {
+  .article-card--featured {
+    grid-template-columns: 1fr;
+  }
+  .blog-hero {
+    text-align: left;
+  }
+}
