@@ -59,8 +59,9 @@ envía Hotmart. Copia ese id y crea la variable `HOTMART_PRODUCT_MAP`, por ej.:
 
 ### E-books (Biblioteca)
 Los libros funcionan igual que los programas. Cada libro tiene un `id` interno
-(en [`src/data/ebooks.js`](src/data/ebooks.js)): `el-arte-de-soltar`,
-`cartas-a-mi-nina-interior`, `no-estas-rota`. Para venderlos:
+(en [`src/data/ebooks.js`](src/data/ebooks.js)): `no-estas-loca-desregulada`,
+`por-que-elijo-mal`, `los-duelos-invisibles`, `papa-necesito-sanar-ebook`,
+`mama-necesito-sanar-ebook`. Para venderlos:
 
 1. Crea el producto en Hotmart y su enlace de pago.
 2. Pon ese enlace en `BOOK_HOTMART[<id>].checkout` en
@@ -68,7 +69,7 @@ Los libros funcionan igual que los programas. Cada libro tiene un `id` interno
 3. Mapea el `product.id` de Hotmart al `id` del libro en `HOTMART_PRODUCT_MAP`:
 
 ```json
-{"9999999":"el-arte-de-soltar","membership_id":"membership"}
+{"9999999":"no-estas-loca-desregulada","membership_id":"membership"}
 ```
 
 Tras la compra, el libro aparece en **Mi espacio → Mis libros** y se puede leer

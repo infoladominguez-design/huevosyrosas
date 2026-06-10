@@ -1,7 +1,18 @@
-// Portada de libro dibujada con CSS (sin imágenes externas).
-// Usa el `accent` y la inicial/emoji del libro para componer una tapa.
+// Portada de libro. Si el libro tiene `image`, muestra la portada real;
+// si no, dibuja una tapa con CSS usando el `accent` y la inicial/emoji.
 export default function BookCover({ book, size = 'md' }) {
   const accent = book.accent || 'var(--plum)'
+
+  if (book.image) {
+    return (
+      <div className={`bookcover bookcover--img bookcover--${size}`} style={{ '--cover-accent': accent }}>
+        <div className="bookcover__spine" />
+        <img className="bookcover__img" src={book.image} alt={`Portada de ${book.title}`} loading="lazy" />
+        <div className="bookcover__shine" />
+      </div>
+    )
+  }
+
   return (
     <div className={`bookcover bookcover--${size}`} style={{ '--cover-accent': accent }}>
       <div className="bookcover__spine" />

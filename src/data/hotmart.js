@@ -31,9 +31,11 @@ export function programCode(programId) {
 // haya enlace de pago real, `checkout` queda como null (la web funciona como
 // escaparate: muestra el libro con vista previa y bloquea el resto).
 export const BOOK_HOTMART = {
-  'el-arte-de-soltar': { code: 'el-arte-de-soltar', checkout: null },
-  'cartas-a-mi-nina-interior': { code: 'cartas-a-mi-nina-interior', checkout: null },
-  'no-estas-rota': { code: 'no-estas-rota', checkout: null },
+  'no-estas-loca-desregulada': { checkout: null },
+  'por-que-elijo-mal': { checkout: null },
+  'los-duelos-invisibles': { checkout: null },
+  'papa-necesito-sanar-ebook': { checkout: null },
+  'mama-necesito-sanar-ebook': { checkout: null },
 }
 
 export function bookCheckout(bookId) {
