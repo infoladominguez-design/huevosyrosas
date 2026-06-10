@@ -2,9 +2,27 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../lib/AuthContext.jsx'
 import { useEntitlements } from '../lib/entitlements.js'
 import { courses, courseLessonCount } from '../data/catalog.js'
-import { useProgress } from '../lib/store.js'
+import { ebooks } from '../data/ebooks.js'
+import { useProgress, useStored } from '../lib/store.js'
 import { MEMBERSHIP } from '../data/hotmart.js'
 import { ProgressBar } from '../components/ui.jsx'
+import BookCover from '../components/BookCover.jsx'
+
+function MyBookCard({ book }) {
+  const [progress] = useStored(`reading:${book.id}`, null)
+  const resume = book.chapters.find((c) => c.id === progress?.chapterId) || book.chapters[0]
+  return (
+    <Link className="space-book" to={`/leer/${book.id}/${resume.id}`} style={{ '--accent': book.accent }}>
+      <BookCover book={book} />
+      <div className="space-book__body">
+        <h3 className="space-book__title">{book.title}</h3>
+        <span className="space-card__cta">
+          {progress?.chapterId ? 'Continuar leyendo →' : 'Empezar a leer →'}
+        </span>
+      </div>
+    </Link>
+  )
+}
 
 function MyProgramCard({ course }) {
   const { count } = useProgress(course.id)
@@ -25,7 +43,7 @@ function MyProgramCard({ course }) {
 
 export default function MemberSpace() {
   const { user, loading, signOut, configured } = useAuth()
-  const { hasProgram, hasMembership, loaded } = useEntitlements()
+  const { hasProgram, hasBook, hasMembership, loaded } = useEntitlements()
   const navigate = useNavigate()
 
   // Aún no se ha activado el login (sin Supabase)
@@ -69,6 +87,7 @@ export default function MemberSpace() {
 
   const mine = courses.filter((c) => hasProgram(c.id))
   const otros = courses.filter((c) => !hasProgram(c.id))
+  const myBooks = ebooks.filter((b) => hasBook(b.id))
   const nombre = (user.email || '').split('@')[0]
 
   return (
@@ -103,6 +122,15 @@ export default function MemberSpace() {
           </div>
         )}
       </section>
+
+      {loaded && myBooks.length > 0 && (
+        <section style={{ paddingTop: 0 }}>
+          <h2 className="section__title">Mis libros</h2>
+          <div className="space-books-grid">
+            {myBooks.map((b) => <MyBookCard key={b.id} book={b} />)}
+          </div>
+        </section>
+      )}
 
       {loaded && otros.length > 0 && (
         <section style={{ paddingTop: 0 }}>

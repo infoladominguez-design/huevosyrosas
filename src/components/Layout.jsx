@@ -12,6 +12,7 @@ function Nav() {
       </Link>
       <nav className="nav__links">
         <NavLink to="/programas">Programas</NavLink>
+        <NavLink to="/biblioteca">Biblioteca</NavLink>
         <NavLink to="/blog">Blog</NavLink>
         <NavLink to="/eventos">Eventos</NavLink>
         <NavLink to="/comunidad">Comunidad</NavLink>

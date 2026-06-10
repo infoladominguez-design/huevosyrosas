@@ -8,6 +8,12 @@ Catálogo de cursos, páginas de curso con módulos y lecciones de contenido
 mixto (vídeo, texto, imágenes y recursos), seguimiento de progreso,
 comentarios en lecciones, foro de comunidad y valoraciones con reseñas.
 
+También incluye una **Biblioteca de e-books**: catálogo de libros que se
+compran (Hotmart) y, tras la compra, se leen dentro de la web con un **lector
+estilo Kindle** — capítulos paginados, índice, temas claro/sepia/oscuro,
+tamaño de letra ajustable y progreso de lectura guardado. El primer capítulo de
+cada libro es vista previa gratuita.
+
 > **Estado:** prototipo visual. Toda la interacción (progreso, comentarios,
 > reseñas, foro y tu nombre) se guarda en el navegador con `localStorage`.
 > Cuando se añada un backend, basta con sustituir los hooks de

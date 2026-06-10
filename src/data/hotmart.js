@@ -24,3 +24,22 @@ export function programCheckout(programId) {
 export function programCode(programId) {
   return PROGRAM_HOTMART[programId]?.code || null
 }
+
+// Mapa: id de e-book en la web -> producto de Hotmart.
+// `code` debe coincidir con el id del libro que guarda el webhook como
+// product_code (ver HOTMART_PRODUCT_MAP en api/_lib/products.js). Mientras no
+// haya enlace de pago real, `checkout` queda como null (la web funciona como
+// escaparate: muestra el libro con vista previa y bloquea el resto).
+export const BOOK_HOTMART = {
+  'el-arte-de-soltar': { code: 'el-arte-de-soltar', checkout: null },
+  'cartas-a-mi-nina-interior': { code: 'cartas-a-mi-nina-interior', checkout: null },
+  'no-estas-rota': { code: 'no-estas-rota', checkout: null },
+}
+
+export function bookCheckout(bookId) {
+  return BOOK_HOTMART[bookId]?.checkout || null
+}
+
+export function bookCode(bookId) {
+  return BOOK_HOTMART[bookId]?.code || bookId
+}

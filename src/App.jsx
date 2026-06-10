@@ -4,6 +4,9 @@ import Home from './pages/Home.jsx'
 import Courses from './pages/Courses.jsx'
 import CourseDetail from './pages/CourseDetail.jsx'
 import Lesson from './pages/Lesson.jsx'
+import Ebooks from './pages/Ebooks.jsx'
+import EbookDetail from './pages/EbookDetail.jsx'
+import Reader from './pages/Reader.jsx'
 import Forum from './pages/Forum.jsx'
 import Blog from './pages/Blog.jsx'
 import Events from './pages/Events.jsx'
@@ -16,12 +19,17 @@ import NotFound from './pages/NotFound.jsx'
 export default function App() {
   return (
     <Routes>
+      {/* El lector va fuera del Layout para una lectura inmersiva (sin nav). */}
+      <Route path="leer/:bookId/:chapterId" element={<Reader />} />
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="cursos" element={<Courses />} />
         <Route path="programas" element={<Courses />} />
         <Route path="cursos/:courseId" element={<CourseDetail />} />
         <Route path="cursos/:courseId/:moduleId/:lessonId" element={<Lesson />} />
+        <Route path="biblioteca" element={<Ebooks />} />
+        <Route path="libros" element={<Ebooks />} />
+        <Route path="biblioteca/:bookId" element={<EbookDetail />} />
         <Route path="comunidad" element={<Forum />} />
         <Route path="blog" element={<Blog />} />
         <Route path="eventos" element={<Events />} />

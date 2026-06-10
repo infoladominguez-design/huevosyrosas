@@ -55,7 +55,24 @@ envía Hotmart. Copia ese id y crea la variable `HOTMART_PRODUCT_MAP`, por ej.:
 {"1234567":"me-duele-estar-soltera","7654321":"membership"}
 ```
 
-(`"membership"` da acceso a todos los programas.)
+(`"membership"` da acceso a todos los programas **y libros**.)
+
+### E-books (Biblioteca)
+Los libros funcionan igual que los programas. Cada libro tiene un `id` interno
+(en [`src/data/ebooks.js`](src/data/ebooks.js)): `el-arte-de-soltar`,
+`cartas-a-mi-nina-interior`, `no-estas-rota`. Para venderlos:
+
+1. Crea el producto en Hotmart y su enlace de pago.
+2. Pon ese enlace en `BOOK_HOTMART[<id>].checkout` en
+   [`src/data/hotmart.js`](src/data/hotmart.js) (sustituye el `null`).
+3. Mapea el `product.id` de Hotmart al `id` del libro en `HOTMART_PRODUCT_MAP`:
+
+```json
+{"9999999":"el-arte-de-soltar","membership_id":"membership"}
+```
+
+Tras la compra, el libro aparece en **Mi espacio → Mis libros** y se puede leer
+dentro de la web con el lector.
 
 ## 5. Probar (modo seguro)
 1. Hotmart permite compras de prueba; haz una con tu email.
@@ -63,7 +80,10 @@ envía Hotmart. Copia ese id y crea la variable `HOTMART_PRODUCT_MAP`, por ej.:
 3. Entra al programa: el contenido debe aparecer desbloqueado.
 
 ## Cómo se protege el contenido
-- El catálogo, el temario y la **primera lección** (vista previa) son públicos.
+- El catálogo, el temario y la **primera lección/capítulo** (vista previa) son públicos.
 - El **cuerpo del resto de lecciones** vive solo en el servidor
   (`api/_lib/content.js`) y se entrega vía `/api/content` **solo** tras
   comprobar la compra. Nunca se incluye en el código que descarga el navegador.
+- Los **capítulos de pago de los libros** funcionan igual: viven en
+  `api/_lib/ebooks.js` y se entregan vía `/api/ebook` solo tras comprobar la
+  compra del libro (o la membresía).

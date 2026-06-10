@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabase.js'
 import { useAuth } from './AuthContext.jsx'
-import { MEMBERSHIP, programCode } from '../data/hotmart.js'
+import { MEMBERSHIP, programCode, bookCode } from '../data/hotmart.js'
 
 // Lee las compras del usuario (por email) desde Supabase. La protección real
 // del contenido la hace el servidor en /api/content; esto es solo para la UI.
@@ -37,6 +37,7 @@ export function useEntitlements() {
   const hasMembership = codes.includes(MEMBERSHIP.code)
   const hasProgram = (programId) =>
     hasMembership || codes.includes(programCode(programId))
+  const hasBook = (bookId) => hasMembership || codes.includes(bookCode(bookId))
 
-  return { codes, hasMembership, hasProgram, loaded }
+  return { codes, hasMembership, hasProgram, hasBook, loaded }
 }
