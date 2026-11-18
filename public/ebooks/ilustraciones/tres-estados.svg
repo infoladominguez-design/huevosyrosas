@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" font-family="Georgia, serif">
+  <rect x="4" y="4" width="592" height="392" rx="28" fill="#fbf4e6" stroke="#e8dcc2" stroke-width="2"/>
+  <text x="300" y="54" text-anchor="middle" font-size="15" letter-spacing="4" fill="#9b8d74" font-family="Helvetica, Arial, sans-serif">TUS TRES ESTADOS</text>
+
+  <!-- Calma -->
+  <g transform="translate(110 170)">
+    <circle r="66" fill="#dcebd5"/>
+    <path d="M-40 4 C -26 -12, -14 -12, 0 4 S 26 20, 40 4" fill="none" stroke="#5c8a52" stroke-width="5" stroke-linecap="round"/>
+    <path d="M-40 26 C -26 12, -14 12, 0 26 S 26 40, 40 26" fill="none" stroke="#5c8a52" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+    <path d="M0 -40 C 14 -40, 22 -28, 0 -14 C -22 -28, -14 -40, 0 -40 Z" fill="#8cbf7f"/>
+  </g>
+  <text x="110" y="276" text-anchor="middle" font-size="24" fill="#3b3226">Calma</text>
+  <text x="110" y="302" text-anchor="middle" font-size="15" fill="#7d705a" font-style="italic">conectada</text>
+  <text x="110" y="340" text-anchor="middle" font-size="13" fill="#9b8d74" font-family="Helvetica, Arial, sans-serif">te sientes a salvo</text>
+
+  <!-- Acelerador -->
+  <g transform="translate(300 170)">
+    <circle r="66" fill="#f6d3db"/>
+    <path d="M-44 10 L -30 10 L -22 -26 L -10 34 L 0 -34 L 10 30 L 20 -18 L 28 10 L 44 10" fill="none" stroke="#c0566e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="300" y="276" text-anchor="middle" font-size="24" fill="#3b3226">Acelerador</text>
+  <text x="300" y="302" text-anchor="middle" font-size="15" fill="#7d705a" font-style="italic">la activación</text>
+  <text x="300" y="340" text-anchor="middle" font-size="13" fill="#9b8d74" font-family="Helvetica, Arial, sans-serif">pelea o huida</text>
+
+  <!-- Freno -->
+  <g transform="translate(490 170)">
+    <circle r="66" fill="#dbe3ee"/>
+    <path d="M-44 6 C -30 6, -24 0, -14 6 L 44 6" fill="none" stroke="#5f7896" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="-22" cy="-26" r="4" fill="#5f7896" opacity=".5"/>
+    <circle cx="0" cy="-30" r="4" fill="#5f7896" opacity=".35"/>
+    <circle cx="22" cy="-26" r="4" fill="#5f7896" opacity=".2"/>
+  </g>
+  <text x="490" y="276" text-anchor="middle" font-size="24" fill="#3b3226">Freno</text>
+  <text x="490" y="302" text-anchor="middle" font-size="15" fill="#7d705a" font-style="italic">el colapso</text>
+  <text x="490" y="340" text-anchor="middle" font-size="13" fill="#9b8d74" font-family="Helvetica, Arial, sans-serif">el cuerpo apaga todo</text>
+
+  <path d="M190 170 h20 M390 170 h20" stroke="#cbbd9f" stroke-width="2" stroke-dasharray="3 5" stroke-linecap="round"/>
+</svg>

@@ -60,6 +60,14 @@ function Block({ block, index, ranges }) {
       return <blockquote className="kr-quote" data-b={index}>{content}</blockquote>
     case 'hr':
       return <div className="kr-break" aria-hidden="true">⁂</div>
+    case 'img':
+      // Ilustración. layout 'pagina' = ocupa una página entera; si no, va dentro del texto.
+      return (
+        <figure className={'kr-fig' + (block.layout === 'pagina' ? ' kr-fig--page' : '')}>
+          <img src={block.src} alt={block.alt || ''} loading="eager" draggable="false" />
+          {block.caption && <figcaption>{block.caption}</figcaption>}
+        </figure>
+      )
     case 'p':
     default:
       return <p className="kr-p" data-b={index}>{content}</p>
@@ -163,6 +171,7 @@ export default function Reader() {
   const [box, setBox] = useState({ w: 0, h: 0 })
   const [popup, setPopup] = useState(null) // {mode:'new'|'edit', ...}
   const [noteEditor, setNoteEditor] = useState(null) // {id, text}
+  const [zoom, setZoom] = useState(null) // ilustración ampliada {src, alt, caption}
 
   const viewportRef = useRef(null)
   const flowRef = useRef(null)
@@ -256,6 +265,9 @@ export default function Reader() {
     if (state.status !== 'ok') return
     repaginate()
     document.fonts?.ready.then(repaginate)
+    flowRef.current?.querySelectorAll('img').forEach((img) => {
+      if (!img.complete) img.addEventListener('load', repaginate, { once: true })
+    })
   }, [state, box.w, box.h, settings.size, settings.font, settings.spacing, repaginate])
 
   // Página 0 al cambiar de capítulo (si no hay destino)
@@ -284,7 +296,7 @@ export default function Reader() {
 
   useEffect(() => {
     const onKey = (e) => {
-      if (noteEditor || e.target.closest?.('input, textarea')) return
+      if (noteEditor || zoom || e.target.closest?.('input, textarea')) return
       if (e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') {
         e.preventDefault()
         nextPage()
@@ -294,11 +306,12 @@ export default function Reader() {
       } else if (e.key === 'Escape') {
         setPanel(null)
         setPopup(null)
+        setZoom(null)
       }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
-  }, [nextPage, prevPage, noteEditor])
+  }, [nextPage, prevPage, noteEditor, zoom])
 
   // ---- Selección de texto → menú de subrayado -------------------------------
   useEffect(() => {
@@ -356,6 +369,11 @@ export default function Reader() {
       if (h) return setPopup({ mode: 'edit', id: h.id, rect: mark.getBoundingClientRect() })
     }
     if (popup) return setPopup(null)
+    const fig = e.target.closest?.('.kr-fig')
+    if (fig) {
+      const img = fig.querySelector('img')
+      return setZoom({ src: img.getAttribute('src'), alt: img.alt, caption: fig.querySelector('figcaption')?.textContent })
+    }
     const r = viewportRef.current.getBoundingClientRect()
     const x = (e.clientX - r.left) / r.width
     if (x < 0.28) prevPage()
@@ -465,6 +483,7 @@ export default function Reader() {
                 columnWidth: pageW,
                 columnGap: gap,
                 transform: `translateX(${-page * step}px)`,
+                '--page-h': `${pageH}px`,
                 fontFamily: FONTS[settings.font]?.css,
                 fontSize,
                 lineHeight,
@@ -653,6 +672,15 @@ export default function Reader() {
               🗑
             </button>
           )}
+        </div>
+      )}
+
+      {/* Ilustración ampliada */}
+      {zoom && (
+        <div className="kr-zoom" onClick={() => setZoom(null)}>
+          <img src={zoom.src} alt={zoom.alt} />
+          {zoom.caption && <p>{zoom.caption}</p>}
+          <button className="kr-zoom__close" aria-label="Cerrar">✕</button>
         </div>
       )}
 

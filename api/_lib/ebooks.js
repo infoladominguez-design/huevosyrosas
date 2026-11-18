@@ -13,11 +13,13 @@ export const ebookContent = {
     { type: 'p', value: 'No es que estés loca. No es que estés rota. Es que tu cuerpo aprendió a anticipar el dolor para evitar el abandono. (Vista previa — el libro completo continúa tras la compra.)' },
   ],
   'no-estas-loca-desregulada:c2': [
+    { type: 'img', layout: 'pagina', src: '/ebooks/ilustraciones/apertura-huevo-rosa.svg', alt: 'Ilustración: un huevo y una rosa' },
     { type: 'h', value: 'Los tres estados' },
     { type: 'p', value: 'Tu cuerpo, en cada momento, está en uno de tres estados. Aprender a reconocerlos en tiempo real es la herramienta más poderosa de este libro, porque no puedes cambiar lo que no sabes nombrar.' },
     { type: 'p', value: 'El primero es la calma conectada. Es el estado en el que te sientes a salvo: respiras hondo, piensas con claridad, puedes estar cerca de alguien sin alarma. Desde acá se construyen los vínculos sanos. Es tu casa, aunque a veces se sienta desconocida.' },
     { type: 'p', value: 'El segundo es el acelerador: la activación. Ansiedad, urgencia, el corazón a mil, la necesidad de hacer algo YA. Es el estado de "pelea o huida". Acá es donde escribes mensajes que no deberías, donde revisas el teléfono cada dos minutos, donde el cuerpo grita que hay peligro aunque no lo haya.' },
     { type: 'p', value: 'El tercero es el freno: el colapso. Cuando la activación es demasiada y por demasiado tiempo, el cuerpo apaga todo. Te sientes vacía, desconectada, sin ganas de nada, como detrás de un vidrio. No es pereza ni falla moral: es un freno de emergencia.' },
+    { type: 'img', src: '/ebooks/ilustraciones/tres-estados.svg', alt: 'Los tres estados: calma conectada, acelerador y freno', caption: 'Calma, acelerador y freno: los tres estados de tu sistema nervioso.' },
     { type: 'quote', value: 'No te preguntes "¿qué me pasa?". Pregúntate "¿en qué estado estoy?". La respuesta lo cambia todo.' },
     { type: 'p', value: 'La meta no es vivir siempre en calma —eso no existe—. La meta es darte cuenta de en qué estado estás, y aprender el camino de regreso a la calma cuando te has ido. Ese camino se entrena. Y empieza por nombrarlo.' },
   ],
