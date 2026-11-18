@@ -13,17 +13,18 @@ export const ebookContent = {
     { type: 'p', value: 'No es que estés loca. No es que estés rota. Es que tu cuerpo aprendió a anticipar el dolor para evitar el abandono. (Vista previa — el libro completo continúa tras la compra.)' },
   ],
   'no-estas-loca-desregulada:c2': [
-    { type: 'img', layout: 'pagina', src: '/ebooks/ilustraciones/apertura-huevo-rosa.svg', alt: 'Ilustración: un huevo y una rosa' },
     { type: 'h', value: 'Los tres estados' },
     { type: 'p', value: 'Tu cuerpo, en cada momento, está en uno de tres estados. Aprender a reconocerlos en tiempo real es la herramienta más poderosa de este libro, porque no puedes cambiar lo que no sabes nombrar.' },
     { type: 'p', value: 'El primero es la calma conectada. Es el estado en el que te sientes a salvo: respiras hondo, piensas con claridad, puedes estar cerca de alguien sin alarma. Desde acá se construyen los vínculos sanos. Es tu casa, aunque a veces se sienta desconocida.' },
     { type: 'p', value: 'El segundo es el acelerador: la activación. Ansiedad, urgencia, el corazón a mil, la necesidad de hacer algo YA. Es el estado de "pelea o huida". Acá es donde escribes mensajes que no deberías, donde revisas el teléfono cada dos minutos, donde el cuerpo grita que hay peligro aunque no lo haya.' },
+    { type: 'img', src: '/ebooks/ilustraciones/sofa-el-con-movil.webp', alt: 'Ella mira a lo lejos en el sofá mientras él mira el móvil' },
     { type: 'p', value: 'El tercero es el freno: el colapso. Cuando la activación es demasiada y por demasiado tiempo, el cuerpo apaga todo. Te sientes vacía, desconectada, sin ganas de nada, como detrás de un vidrio. No es pereza ni falla moral: es un freno de emergencia.' },
-    { type: 'img', src: '/ebooks/ilustraciones/tres-estados.svg', alt: 'Los tres estados: calma conectada, acelerador y freno', caption: 'Calma, acelerador y freno: los tres estados de tu sistema nervioso.' },
+    { type: 'img', src: '/ebooks/ilustraciones/tres-estados.svg', alt: 'Los tres estados: calma conectada, acelerador y freno' },
     { type: 'quote', value: 'No te preguntes "¿qué me pasa?". Pregúntate "¿en qué estado estoy?". La respuesta lo cambia todo.' },
     { type: 'p', value: 'La meta no es vivir siempre en calma —eso no existe—. La meta es darte cuenta de en qué estado estás, y aprender el camino de regreso a la calma cuando te has ido. Ese camino se entrena. Y empieza por nombrarlo.' },
   ],
   'no-estas-loca-desregulada:c3': [
+    { type: 'img', layout: 'pagina', src: '/ebooks/ilustraciones/cama-ella-despierta.webp', alt: 'Ella sentada en la cama, despierta y pensativa, mientras él duerme' },
     { type: 'h', value: 'Por qué eliges lo que te lastima' },
     { type: 'p', value: 'Hay una palabra que lo explica casi todo: familiaridad. Tu cuerpo no busca lo que te hace bien. Busca lo que reconoce. Y si lo que reconoce es la intermitencia, la espera, el tener que ganarte el cariño, entonces eso es lo que vas a sentir como "química".' },
     { type: 'p', value: 'Por eso el hombre que te trata bien "no te genera nada" y el que te deja en visto "te vuelve loca". No es que uno valga menos. Es que uno activa tu sistema de la forma en que aprendió a activarse, y el otro no. Lo confundes con atracción. Es reconocimiento.' },
@@ -32,6 +33,7 @@ export const ebookContent = {
     { type: 'p', value: 'La buena noticia: lo familiar se puede actualizar. Cada vez que te quedas con alguien que te trata bien y toleras la incomodidad de que "no pasa nada malo", le estás enseñando a tu cuerpo un nuevo significado de la palabra amor. Es lento. Pero es posible. El cuerpo aprende.' },
   ],
   'no-estas-loca-desregulada:c4': [
+    { type: 'img', layout: 'pagina', src: '/ebooks/ilustraciones/mujer-escribiendo-diario.webp', alt: 'Una mujer escribe en su diario sentada en un sillón' },
     { type: 'h', value: 'Aprender a sentirte a salvo' },
     { type: 'p', value: 'No se construyen vínculos sanos si antes no se aprende a estar a salvo en el propio cuerpo. Así que vamos a terminar donde de verdad empieza todo: enseñándole a tu sistema nervioso, con pequeñas experiencias repetidas, que la calma no es peligro.' },
     { type: 'p', value: 'Una: el ancla del cuerpo. Varias veces al día, cuando NO estés en crisis, párate un momento y siente los pies en el piso, el aire entrando, un objeto en la mano. Le estás enseñando a tu sistema dónde queda la calma, para encontrar el camino cuando la necesites de verdad.' },
